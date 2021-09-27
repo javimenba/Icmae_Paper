@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex latex8"] 1632760050 "latex8.aux" "latex8.bbl" "latex8" 1632760052
+["bibtex latex8"] 1632776979 "latex8.aux" "latex8.bbl" "latex8" 1632776998
   "./latex8.bst" 1632372809 19535 0f8b4bbb95961e52095b222ab55a4fac ""
-  "latex8.aux" 1632760051 5609 9f64fc7436db658c8d72f97dd9afcc6f "pdflatex"
+  "latex8.aux" 1632776997 3814 a1d2e371119fd547b6056bcd03b06c1f "pdflatex"
   "latex8.bib" 1632690517 851 231e85262fe00e4cc1baabadd5a99411 ""
   (generated)
-  "latex8.bbl"
   "latex8.blg"
-["pdflatex"] 1632760051 "latex8.tex" "latex8.pdf" "latex8" 1632760052
+  "latex8.bbl"
+["pdflatex"] 1632776996 "latex8.tex" "latex8.pdf" "latex8" 1632776998
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1617738065 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb.tfm" 1617738065 2300 14616918391efa49ac8b481a75fbdc1a ""
@@ -28,9 +28,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1617738065 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1617738065 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1617738065 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1617738065 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1617738065 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1617738065 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb" 1617738065 35941 f27169cc74234d5bd5e4cca5abafaabb ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1617738065 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1617738065 46026 6dab18b61c907687b520c72847215a68 ""
@@ -45,6 +43,7 @@
   "/usr/share/texmf-dist/tex/latex/base/article.cls" 1617738065 20145 aad8c3dd3bc36e260347b84002182bc2 ""
   "/usr/share/texmf-dist/tex/latex/base/ifthen.sty" 1617738065 5159 892429808d9e0e2b3548aaefd9a06ed0 ""
   "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1617738065 8449 a72d5d4e612221b46000c3d71724e0ef ""
+  "/usr/share/texmf-dist/tex/latex/comment/comment.sty" 1621766596 10197 204f75d5d8d88aa345a8c402e879e63b ""
   "/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty" 1621766596 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1617738065 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty" 1617738065 11772 8d0db0794e6aeb45348f60bbe3a3e093 ""
@@ -78,13 +77,15 @@
   "Img/segunda_version_3d.png" 1632599920 142479 027eaf8494a96bb15597a402845893f7 ""
   "Img/segunda_version_final.jpg" 1632601661 83862 d4725ae4b224cce711baaafbfbc388bf ""
   "Img/segunda_version_pcb.png" 1632599874 67192 a288eb9591688cc93fb401b1d80ffa1f ""
+  "Img/segunda_version_pcb_b.png" 1632776398 165394 8a8adede654f69d07514f38a7afc8e57 ""
   "Img/tercera_version_3d.png" 1632615970 113892 fc380297426ac59aa6bcd2e61afe0ee6 ""
   "Img/tercera_version_pcb.png" 1632615884 106129 d676a28b34fd47c45abcdd660699a959 ""
-  "latex8.aux" 1632760051 5609 9f64fc7436db658c8d72f97dd9afcc6f "pdflatex"
-  "latex8.bbl" 1632760051 535 c9f35351ac556be440a59f554c5baece "bibtex latex8"
+  "Img/tercera_version_pcb_b.png" 1632776469 225444 c0f07c68bf280b3110a10db7367b336b ""
+  "latex8.aux" 1632776997 3814 a1d2e371119fd547b6056bcd03b06c1f "pdflatex"
+  "latex8.bbl" 1632776979 295 09098ad9662fed7db46998895ff7a92d "bibtex latex8"
   "latex8.sty" 1632372809 4653 348b16eb06088469fdb326a3255e9315 ""
-  "latex8.tex" 1632760048 20826 cc935bd15a0f8a5525e7356dbfab4e7a ""
+  "latex8.tex" 1632776995 23755 b1d669da2473b42ee69921cc5f9584aa ""
   (generated)
-  "latex8.aux"
   "latex8.pdf"
   "latex8.log"
+  "latex8.aux"

@@ -1,15 +1,5 @@
 \begin{thebibliography}{1}\setlength{\itemsep}{-1ex}\small
 
-\bibitem{ex3}
-I.~M. Author.
-\newblock Some related article {I} wrote.
-\newblock {\em Some Fine Journal}, 99(7):1--100, January 1999.
-
-\bibitem{ex4}
-A.~N. Expert.
-\newblock {\em A Book He Wrote}.
-\newblock His Publisher, Erewhon, NC, 1999.
-
 \bibitem{ex1}
 Microchip.
 \newblock Pic18(l)f2x/45k50 data sheet.

@@ -15,6 +15,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage{comment}
 %\documentstyle[times,art10,twocolumn,latex8]{article}
 
 %------------------------------------------------------------------------- 
@@ -79,7 +80,7 @@ Si queremos avanzar en el mundo tecnológico se debe preparar para ello, por lo 
 
 
 %------------------------------------------------------------------------- 
-\Section{Introduction}
+\Section{Introducción}
 \raggedbottom
 A medida que la tecnología crece, el plan de estudios y los desafíos en la industria están comprometidos a mantenerse al mismo ritmo, por lo tanto debemos incorporar herramientas que nos permita crecer y desarrollar nuevas tecnologías. No podemos hablar de un origen de las ``placas de desarrollo" pero podemos partir de los nuevos productos
 que siguen incorporándose día a día. Estos productos permiten el crecimiento en las
@@ -122,11 +123,12 @@ Esta nueva versión parte del diseño descrito anteriormente, removiéndose los 
 \Img{8.0cm}{5.5cm}{Segunda_Version}{Diagrama de circuito Versión 2.0}{fig:5}
 
 Por consecuencia se ajustó el dibujo del circuito impreso para agregar los nuevos elementos, sin embargo, cabe destacar que las medidas de diseño se redujeron a 9.017cm x 9.906cm como se muestra en la Fig.~\ref{fig:6}. 
-\Img{6.5cm}{6.0cm}{segunda_version_pcb}{Diagrama de circuito impreso Versión 2.0}{fig:6}
+\Img{6.5cm}{6.0cm}{segunda_version_pcb}{Diagrama de circuito impreso Versión 2.0 capa superior}{fig:6}
+
 
 Nuevamente recurrimos al análisis a partir de un modelo 3D para evitar posibles fallas en el dibujo del circuito impreso, como se puede apreciar en la Fig.\ref{fig:7}.
-\Img{7.5cm}{6.2cm}{segunda_version_3d}{Modelo 3D de circuito impreso Versión 2.0}{fig:7}
-
+\Img{7.2cm}{6.2cm}{segunda_version_3d}{Modelo 3D de circuito impreso Versión 2.0 capa superior}{fig:7}
+\Img{7.2cm}{6.2cm}{segunda_version_pcb_b}{Modelo 3D de circuito impreso Versión 2.0 capa inferior}{fig:6}
 Una vez obtenida la alineación de todos los componentes, se imprimió el diseño del circuito en la placa que resulta en la forma final que se advierte en la Fig.~\ref{fig:8}
 \Img{7.5cm}{7.0cm}{segunda_version_final}{Placa de desarrollo Versión 2.0}{fig:8}
 
@@ -158,12 +160,30 @@ Las aplicaciones que se le pueden dar a los push button son: interrupciones, mod
 
 
 Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:11}
-\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D de circuito impreso Versión 3.0}{fig:11}
-
+\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D de circuito impreso Versión 3.0 capa superior}{fig:11}
+\Img{6.9cm}{6.0cm}{tercera_version_pcb_b}{Modelo 3D de circuito impreso Versión 3.0 capa inferior}{fig:11}
 %-------------------------------------------------------------------------
 \Section{Resultados y discusión}
+
+La versión 1.0 fue pensada para cumplir una sola función adaptada a un sistema  de alarma, la cuál cumple satisfactoriamente en cuanto a posibles fallas se encontró un sobrecalentamiento en un elemento del módulo de alimentación, el cuál se pudo dar solución realizando una prueba de corto circuito encontrando el origen de la falla en el elemento regulador LM7805, es posible que esta pieza presentará una falla de fabricación por lo tanto se retiró dicho componente y sustituirlo por uno nuevo. En la Fig.12 se puede apreciar un DEMO.\\
+
+En la versión 2.0 se consiguió agregar más elementos a la vez que se redujo el tamaño
+de la placa, esto es el resultado de utilizar componentes de montaje superficial (SMD) es decir, manejar elementos más pequeños permite una mejor distribución dentro de una área de trabajo. El tamaño de los encapsulados rectangulares SMD que se utilizo en esta versión fue de 1206( 3.2 x 1.6 mm ), se decidió por este tamaño ya que se consideró que se tendría mayor facilidad en el momento del ensamblaje. En la Fig.13 se puede apreciar un DEMO.\\
+
+En la versión 3.0 finalmente se optó por reducir el tamaño de los encapsulados rectangulares SMD a 0805( 2.0 x 1.25 mm ) en consecuencia la proporción de tamaño de la placa se redujo aún mas a consideración de la versión 2.0. Se implemento un nuevo sistema de alimentación donde los elementos through hole (THT) que lo conformaban fueron sustituidos por componentes SMD, se cambió el grosor de las pistas en esta sección de la placa para brindar mas vida útil.\\
+
+
+Por último con respecto al tamaño del diseño del circuito impreso de la primera versión se logro optimizar el espacio gracias a la tecnología de fabricación de circuitos de doble cara, el porcentaje que se redujo de la versión 1.0 respecto a la versión 3.0 es de 49.5\% en otras palabras se convierte en una placa atractiva para sus diferentes uso y campos de trabajo dado que, por su flexibilidad de tamaño se puede implementar en un gran número de áreas que abarcan desde ingeniería, medicina, química, educación, entre otras.\\
+
+En definitiva se debe motivar a las nuevas generaciones, estudiantes de ingeniería electrónica a profundizar sobre el diseño de circuitos electrónicos y brindarle esas herramientas prácticas para que sean capaces de realizar productos acabados que se convierta en un incremento de la producción de la zona y del país. \\ \\
+
+``\textit{No hay emoción más intensa para un inventor que ver unas de sus creaciones
+funcionando}''\hspace*{1.5cm} \textbf{\scriptsize ~Nikola Tesla}
+
+
 %-------------------------------------------------------------------------
 
+\begin{comment}
 \Section{Instructions}
 
 Please read the following carefully.
@@ -324,9 +344,9 @@ published in the proceedings.
 Please direct any questions to the production editor in charge of these 
 proceedings at the IEEE Computer Society Press: Phone (714) 821-8380, or 
 Fax (714) 761-1784.
-
+\end{comment}
 %------------------------------------------------------------------------- 
-\nocite{ex1,ex2,ex3,ex4}
+\nocite{ex1,ex2}
 \bibliographystyle{latex8}
 \bibliography{latex8}
 
