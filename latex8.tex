@@ -88,9 +88,9 @@ tecnologías de control y por lo mismo mantenerse al día con el desarrollo de m
 
 
 %-------------------------------------------------------------------------
-\section{Materiales y métodos}
+\Section{Materiales y métodos}
 
-\subsection{PIC18F45K50}
+\SubSection{PIC18F45K50}
 
 PIC18F45K50 es un circuito integrado programable, también llamado microcontrolador, perteneciente a la familia de PIC18 y que puede ejecutar tareas programadas según sea su aplicación en los distintos sectores: industria, automoción, electrónica de consumo, entre otros.\\ \\
 Entre las características a destacar del PIC18F45K50 se encuentran su capacidad para soportar voltajes de operación de 4.2V hasta 5.5V, módulos de comunicación serial UART, A/E/USART, SPI, I 2C, módulo MSSP (SPI-I2C), 13 canales de ADC trabajando a 10 bits, 35 pines I/O disponibles, 2 comparadores análogos, una memoria tipo EEPROM de 256 bytes, memoria flash de 32 kB y frecuencia máxima de 48MHz~\cite{ex1}; suficientes para posicionar a este microcontrolador como uno de los más complejos y preferidos del momento, además de que su precio es considerablemente menor comparado con otros disponibles en el mercado.
@@ -100,7 +100,7 @@ Entre las características a destacar del PIC18F45K50 se encuentran su capacidad
 %-------------------------------------------------------------------------
 %Primera versión
 
-\subsection{Placa entrenadora Versión 1.0}
+\SubSection{Placa entrenadora Versión 1.0}
 Consistió en el diseño de un circuito de prueba al que denominamos versión 1.0; de inicio se dispuso de un software de uso libre para la automatización del diseño electrónico (EDA) de los diagramas de circuito, los cuales incluyeron los siguientes componentes: un módulo robusto de alimentación, botón RESET, led indicador de alimentación ya sea vía PIKIT3 o USB, salida por PIN del PIC18F45K50 y módulo de sensores (conformado por HC-06, NRF24L01, 4 leds, teclado, buzzer, y un potenciómetro para regular el brillo de la pantalla LCD). \\
 La primera versión contó con tecnología through hole (THT), favoreciendo las pruebas de fuentes de alimentación a las que se sometieron cada uno de los módulos por separado. Posteriormente, para evaluar su correcto funcionamiento integral, se utilizó un
 código DEMO para la realización simultánea de pruebas de comunicación vía serial, SPI y $I^{2}$C, como se muestra en la Fig.~\ref{fig:1}
@@ -117,7 +117,7 @@ Gracias a este diseño se comprobó que cada uno de los módulos funcionaba corr
 %-------------------------------------------------------------------------
 
 %Segunda versión
-\subsection{Placa entranadora Versión 2.0}
+\SubSection{Placa entranadora Versión 2.0}
 Esta nueva versión parte del diseño descrito anteriormente, removiéndose los elementos THT para sustituirlos por tecnología de montaje superficial (SMD); asimismo, se añadieron: 2 salidas por PIN del PIC18F45K50, salidas de 3.3V y 5V, 7leds que cubren el PORTA, un control de leds, un control buzzer, led indicador de activación del buzzer, potenciómetro para ADC, control de ADC y brillo automático en la pantalla LCD. Esta serie de cambios permitieron la Versión 2.0 representada inicialmente en el diagrama de la Fig.~\ref{fig:5}
 \Img{8.0cm}{5.5cm}{Segunda_Version}{Diagrama de circuito Versión 2.0}{fig:5}
 
@@ -133,7 +133,7 @@ Una vez obtenida la alineación de todos los componentes, se imprimió el diseñ
 
 %------------------------------------------------------------------------- 
 %Tercera versión
-\subsection{Placa entranadora Versión 3.0}
+\SubSection{Placa entranadora Versión 3.0}
 En la tercera y más reciente versión se agregó un puerto USB tipo C, nuevo sistema de alimentación, pantalla OLED, 3 push button para interrupciones, modo de programación con bootloader y 3 display de 7 segmentos unificados; todo esto se dispone en el diagrama de la Fig.~\ref{fig:9}.
 \Img{8.5cm}{7.0cm}{Tercera_Version}{Diagrama de circuito Versión 3.0}{fig:9}
 
@@ -161,6 +161,9 @@ Luego de tener cada uno de los elementos alineados, se procedió a imprimir el d
 \Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D de circuito impreso Versión 3.0}{fig:11}
 
 %-------------------------------------------------------------------------
+\Section{Resultados y discusión}
+%-------------------------------------------------------------------------
+
 \Section{Instructions}
 
 Please read the following carefully.
