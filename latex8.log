@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.27)  26 SEP 2021 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.27)  26 SEP 2021 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -293,14 +293,14 @@ Package pdftex.def Info: Img/tercera_version_pcb.png  used on input line 140.
 <Img/tercera_version_3d.png, id=38, 628.59843pt x 493.0922pt>
 File: Img/tercera_version_3d.png Graphic file (type png)
 <use Img/tercera_version_3d.png>
-Package pdftex.def Info: Img/tercera_version_3d.png  used on input line 154.
+Package pdftex.def Info: Img/tercera_version_3d.png  used on input line 155.
 (pdftex.def)             Requested size: 224.77019pt x 199.16704pt.
- [4 <./Img/Tercera_Version.pdf> <./Img/tercera_version_pcb.png (PNG copy)> <./Img/tercera_version_3d.png (PNG copy)>]
-Underfull \hbox (badness 1178) in paragraph at lines 243--249
+ [4 <./Img/Tercera_Version.pdf> <./Img/tercera_version_pcb.png (PNG copy)>]
+Underfull \hbox (badness 1178) in paragraph at lines 244--250
 []\OT1/ptm/m/n/10 SECOND-ORDER HEAD-INGS. (For ex-am-ple, \elvbf 1.1.
  []
 
-[5] (./latex8.bbl) [6] (./latex8.aux) ) 
+[5 <./Img/tercera_version_3d.png (PNG copy)>] (./latex8.bbl) [6] (./latex8.aux) ) 
 Here is how much of TeX's memory you used:
  3098 strings out of 478994
  45938 string characters out of 5864751
@@ -310,7 +310,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  83i,9n,88p,883b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on latex8.pdf (6 pages, 1238059 bytes).
+Output written on latex8.pdf (6 pages, 1238273 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
