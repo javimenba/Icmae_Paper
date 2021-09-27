@@ -1,0 +1,324 @@
+
+%
+%
+%  $Description: Author guidelines and sample document in LaTeX 2.09$ 
+%
+%  $Author: ienne $
+%  $Date: 1995/09/15 15:20:59 $
+%  $Revision: 1.4 $
+%
+
+\documentclass[times, 10pt,twocolumn]{article} 
+\usepackage{latex8}
+\usepackage{times}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+%\documentstyle[times,art10,twocolumn,latex8]{article}
+
+%------------------------------------------------------------------------- 
+% take the % away on next line to produce the final camera-ready version 
+\pagestyle{empty}
+
+%-------------------------------------------------------------------------
+%Macros para  imagenes (png, jpg)
+\newcommand{\img}[4]{
+   \begin{figure}[H]
+   	   \centering
+   	%Imagen principal del documento
+       \includegraphics[scale=#1]{Img/#2}
+       \caption{#3}
+   	   \label{#4}
+       \end{figure}
+   }
+
+
+ \newcommand{\Img}[5]{
+   \begin{figure}[H]
+   	   \centering
+   	%Imagen principal del documento
+       \includegraphics[width=#1, height=#2]{Img/#3}
+       \caption{ \centering \textbf{\small #4}}
+       \label{#5}
+       \end{figure}
+   }  
+%------------------------------------------------------------------------
+%Contadores
+\newcounter{module}
+\setcounter{module}{1}
+
+%-------------------------------------------------------------------------
+\begin{document}
+
+\title{Diseño y desarrollo de una placa entrenadora del microcontrolador PIC18F45K50}
+
+\author{Francisco Javier Mendoza Bautista\\
+Universidad de Guanajuato\\ Departamento de Comunicaciones y Electrónica \\  
+Salamanca/Guanajuato, México\\fj.mendozabautista@ugto.mx\\
+% For a paper whose authors are all at the same institution, 
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'', 
+% just like the second author.
+\and
+Second Author\\
+Institution2\\
+First line of institution2 address\\ Second line of institution2 address\\ 
+SecondAuthor@institution2.com\\
+}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+  El campo de la Ingeniería en Comunicaciones y Electrónica es pilar en los avances tecnológicos cuyo desarrollo y crecimiento ha sido exponencial en los últimos años. Uno de los principales objetivos que se busca dentro de la Ingeniería Electrónica es resolver tareas diversas de manera eficiente y rápida.
+ En este punto los  microcontroladores juegan un papel importante ya que son pequeños y pueden ser programados para que realicen  acciones por  medio de instrucciones que nosotros deseamos. 
+Si queremos avanzar en el mundo tecnológico se debe preparar para ello, por lo tanto es esencial desarrollar habilidades en el  software del microcontrolador y utilizar un hardware que nos permita comprobar el software escrito. En este estudio se presenta una placa de prueba y desarrollo en la que se puede programar un microcontrolador PIC18F4550 o un PIC18F45K50, dejando atrás la manera convencional de unir el microcontrolador con la parte electrónica y dando lugar a la flexibilidad de trabajar con módulos dentro de la placa. El conjunto incluye pantalla tipo OLED, conjunto de leds, teclado matricial, 7 segmentos unificados, bluetooth, conexión wifi, grupo de botones, puerto USB tipo c, buzzer, potenciómetro para el adc, sistema de alimentación externa, módulo de radiofrecuencia y la posibilidad de programar por medio de PIKIT3 o vía USB.
+\end{abstract}
+
+
+
+%------------------------------------------------------------------------- 
+\Section{Introduction}
+\raggedbottom
+A medida que la tecnología crece, el plan de estudios y los desafíos en la industria están comprometidos a mantenerse al mismo ritmo, por lo tanto debemos incorporar herramientas que nos permita crecer y desarrollar nuevas tecnologías. No podemos hablar de un origen de las ``placas de desarrollo" pero podemos partir de los nuevos productos
+que siguen incorporándose día a día. Estos productos permiten el crecimiento en las
+tecnologías de control y por lo mismo mantenerse al día con el desarrollo de microcontroladores se vuelve un tanto complicado. 
+
+
+
+%-------------------------------------------------------------------------
+\section{PIC18F45K50}
+
+PIC18F45K50 es un circuito integrado programable, también llamado microcontrolador, perteneciente a la familia de PIC18 y que puede ejecutar tareas programadas según sea su aplicación en los distintos sectores: industria, automoción, electrónica de consumo, entre otros.\\ \\
+Entre las características a destacar del PIC18F45K50 se encuentran su capacidad para soportar voltajes de operación de 4.2V hasta 5.5V, módulos de comunicación serial UART, A/E/USART, SPI, I 2C, módulo MSSP (SPI-I2C), 13 canales de ADC trabajando a 10 bits, 35 pines I/O disponibles, 2 comparadores análogos, una memoria tipo EEPROM de 256 bytes, memoria flash de 32 kB y frecuencia máxima de 48MHz~\cite{ex1}; suficientes para posicionar a este microcontrolador como uno de los más complejos y preferidos del momento, además de que su precio es considerablemente menor comparado con otros disponibles en el mercado.
+
+%-------------------------------------------------------------------------
+\Section{Diseño de prueba y desarrollo}
+
+%-------------------------------------------------------------------------
+%Primera versión
+
+\subsection{Primera Versión}
+Consistió en el diseño de un circuito de prueba al que denominamos versión 1.0; de inicio se dispuso de un software de uso libre para la automatización del diseño electrónico (EDA) de los diagramas de circuito, los cuales incluyeron los siguientes componentes: un módulo robusto de alimentación, botón RESET, led indicador de alimentación ya sea vía PIKIT3 o USB, salida por PIN del PIC18F45K50 y módulo de sensores (conformado por HC-06, NRF24L01, 4 leds, teclado, buzzer, y un potenciómetro para regular el brillo de la pantalla LCD). \\
+La primera versión contó con tecnología through hole (THT), favoreciendo las pruebas de fuentes de alimentación a las que se sometieron cada uno de los módulos por separado. Posteriormente, para evaluar su correcto funcionamiento integral, se utilizó un
+código DEMO para la realización simultánea de pruebas de comunicación vía serial, SPI y $I^{2}$C, como se muestra en la Fig.~\ref{fig:1}
+
+\Img{8.5cm}{6.3cm}{Primera_Version.pdf}{ Primera versión del diagrama de
+circuito}{fig:1} Después de verificar el procedimiento anterior, se siguió con el dibujo del circuito impreso teniendo como premisa de diseño no exceder un tamaño de 10x10cm a fin de presentar un producto compacto y atractivo, de fácil acceso y uso para el usuario.
+En la Fig.~\ref{fig:2} se muestra el diagrama de circuito impreso propuesto.
+\Img{6.5cm}{6.0cm}{primera_version_pcb}{Diagrama del circuito impreso}{fig:2}
+Como método para evitar errores de diseño al dibujar el circuito impreso, nos apoyamos en la visualización 3D que se puede apreciar en la Fig.~\ref{fig:3} y en el estudio minucioso del modelo.
+\Img{8.5cm}{7.0cm}{primera_version_3d}{Modelo 3D del circuito
+impreso}{fig:3}
+Una vez obtenida la alineación de todos los componentes, se imprimió el diseño del circuito en la placa que resulta en la forma final que se advierte en la Fig.~\ref{fig:4}
+\Img{8.5cm}{7.0cm}{primera_version_final}{Placa de desarrollo}{fig:4} 
+Gracias a este diseño se comprobó que cada uno de los módulos funcionaba correctamente. 
+
+%-------------------------------------------------------------------------
+
+%Segunda versión
+\subsection{Segunda Versión}
+Para hacer la placa mas funcional se decidió remover los componentes through hole y sustituirlo por elementos SMD además se agrego lo siguiente: pueto usb tipo B con posibilidad de programar el PIC vía USB 2.0, alimentación por medio de USB, dos salidas por PIN del PIC18F45K50, dos salidas de 5v y 3.3v, 7 led's que cubren el PORTA, un control de led's,
+un control BUZZER, led indicador de activación del BUZZER,  potenciómetro para ADC, control de ADC y brillo automático en la pantalla LCD esto dió lugar a la versión 2.0.
+El esquemático del circuito que satisface las anteriores descripciones se muestra en la figura~\ref{fig:5}
+\Img{8.0cm}{5.5cm}{Segunda_Version}{Esquemático de la segunda versión}{fig:5}
+Las medidas de construcción se redujeron a 9.017cm x 9.906cm esto fue un cambio positivo ya que se agregaron mas elementos en un espacio menor. La distribución de elementos se puede apreciar en la figura~\ref{fig:6}. 
+\Img{6.5cm}{6.0cm}{segunda_version_pcb}{Diagrama del circuito impreso segunda versión}{fig:6}
+Nuevamente se toma como referencia el modelo 3D para descartar algún error de construcción antes de imprimir el circuito, el modelo 3D se puede apreciar en la figura~\ref{fig:7}.
+\Img{7.5cm}{6.2cm}{segunda_version_3d}{Modelo 3D del circuito impreso segunda versión}{fig:7}
+Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:8}
+\Img{7.5cm}{7.0cm}{segunda_version_final}{Placa de desarrollo segunda versión}{fig:8}
+
+
+%------------------------------------------------------------------------- 
+%Tercera versión
+\subsection{Tercera Versión}
+Finalmente se presenta la versión mas nueva donde se agregaron nuevas funcionalidades que son las siguientes: Puerto USB tipo C, nuevo sistema de alimentación, pantalla tipo OLED, tres push boton para interrupciones, modo de programación con Bootloader y 3 display de 7 segmentos unificados, todo esto se muestra en la figura~\ref{fig:9}.
+\Img{8.5cm}{7.0cm}{Tercera_Version}{Esquemático de la tercera versión}{fig:9}
+Las medidas de construcción se redujeron a 7.080cm x 8.050cm con esta versión se pudo lograr un nuevo tamaño que es un cambio positivo. La distribución de elementos se puede apreciar en la figura~\ref{fig:10}
+\Img{7.5cm}{7.0cm}{tercera_version_pcb}{Diagrama del circuito impreso tercera versión}{fig:10}
+\begin{enumerate}[label=\emph{\Alph*.}] 
+  \item \textbf{Modulo de Programación} se fijo una entrada para el PIKIT3 que es el programador oficial que nos proporciona Microchip para la familia PIC18, teniendo como opción grabar el programa hexadecimal dentro del software del PIKIT3 o en el IDE MPLAB. También se realizó las conexiones pertinentes para habilitar la programación vía USB.   
+ 
+  \item \textbf{Conjunto de push button} se estableció un botón por cada interrupción del microcontrolador: \textit{INT0, INT1 y INT2}; en los pines correspondientes \textit{RB0, RB1 y  RB2}, dichas interrupciones serán activadas por software. La configuración de los push button es ``Pull Down''. Las aplicaciones que se le pueden dar a los push button son: interrupciones, modo Bootloader y de uso ordinario.
+
+ 
+  \item \textbf{Display 7 Segmentos unificados} se conectó en la salida de cada display un transistor npn en configuración switch, para su activación por medio de software. Se protegió cada led del 7 segmentos con la resistencia que el fabricante propone~\cite{ex2}.
+  \item \textbf{Buzzer y ADC}. Estos dos elementos están conectados en el PORTE, el BUZZER tiene un control de activación que no es más que un jumper puente corto circuito y un led que indica cuando está en funcionamiento. El módulo del ADC está conformado por un Dip switch que controla la conexión a los 5v, para variar el voltaje el módulo cuenta con un potenciómetro. 
+  \item \textbf{Módulo de LED's} está conectado al PORTA y en total son 8 led's. Este modulo tiene un control de activación formado por un jumper puente corto circuito.
+\end{enumerate}
+
+
+Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:11}
+\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D del circuito impreso tercera versión}{fig:11}
+
+%-------------------------------------------------------------------------
+\Section{Instructions}
+
+Please read the following carefully.
+
+%------------------------------------------------------------------------- 
+\SubSection{Language}
+
+All manuscripts must be in English. Why?
+
+%------------------------------------------------------------------------- 
+\SubSection{Printing your paper}
+
+Print your properly formatted text on high-quality, $8.5 \times 11$-inch 
+white printer paper. A4 paper is also acceptable, but please leave the 
+extra 0.5 inch (1.27 cm) at the BOTTOM of the page.
+
+%------------------------------------------------------------------------- 
+\SubSection{Margins and page numbering}
+
+All printed material, including text, illustrations, and charts, must be 
+kept within a print area 6-7/8 inches (17.5 cm) wide by 8-7/8 inches 
+(22.54 cm) high. Do not write or print anything outside the print area. 
+Number your pages lightly, in pencil, on the upper right-hand corners of 
+the BACKS of the pages (for example, 1/10, 2/10, or 1 of 10, 2 of 10, and 
+so forth). Please do not write on the fronts of the pages, nor on the 
+lower halves of the backs of the pages.
+
+
+%------------------------------------------------------------------------ 
+\SubSection{Formatting your paper}
+
+All text must be in a two-column format. The total allowable width of 
+the text area is 6-7/8 inches (17.5 cm) wide by 8-7/8 inches (22.54 cm) 
+high. Columns are to be 3-1/4 inches (8.25 cm) wide, with a 5/16 inch 
+(0.8 cm) space between them. The main title (on the first page) should 
+begin 1.0 inch (2.54 cm) from the top edge of the page. The second and 
+following pages should begin 1.0 inch (2.54 cm) from the top edge. On 
+all pages, the bottom margin should be 1-1/8 inches (2.86 cm) from the 
+bottom edge of the page for $8.5 \times 11$-inch paper; for A4 paper, 
+approximately 1-5/8 inches (4.13 cm) from the bottom edge of the page.
+
+%------------------------------------------------------------------------- 
+\SubSection{Type-style and fonts}
+
+Wherever Times is specified, Times Roman may also be used. If neither is 
+available on your word processor, please use the font closest in 
+appearance to Times that you have access to.
+
+MAIN TITLE. Center the title 1-3/8 inches (3.49 cm) from the top edge of 
+the first page. The title should be in Times 14-point, boldface type. 
+Capitalize the first letter of nouns, pronouns, verbs, adjectives, and 
+adverbs; do not capitalize articles, coordinate conjunctions, or 
+prepositions (unless the title begins with such a word). Leave two blank 
+lines after the title.
+
+AUTHOR NAME(s) and AFFILIATION(s) are to be centered beneath the title 
+and printed in Times 12-point, non-boldface type. This information is to 
+be followed by two blank lines.
+
+The ABSTRACT and MAIN TEXT are to be in a two-column format. 
+
+MAIN TEXT. Type main text in 10-point Times, single-spaced. Do NOT use 
+double-spacing. All paragraphs should be indented 1 pica (approx. 1/6 
+inch or 0.422 cm). Make sure your text is fully justified---that is, 
+flush left and flush right. Please do not place any additional blank 
+lines between paragraphs. Figure and table captions should be 10-point 
+Helvetica boldface type as in
+\begin{figure}[h]
+   \caption{Example of caption.}
+\end{figure}
+
+\noindent Long captions should be set as in 
+\begin{figure}[h] 
+   \caption{Example of long caption requiring more than one line. It is 
+     not typed centered but aligned on both sides and indented with an 
+     additional margin on both sides of 1~pica.}
+\end{figure}
+
+\noindent Callouts should be 9-point Helvetica, non-boldface type. 
+Initially capitalize only the first word of section titles and first-, 
+second-, and third-order headings.
+
+FIRST-ORDER HEADINGS. (For example, {\large \bf 1. Introduction}) 
+should be Times 12-point boldface, initially capitalized, flush left, 
+with one blank line before, and one blank line after.
+
+SECOND-ORDER HEADINGS. (For example, {\elvbf 1.1. Database elements}) 
+should be Times 11-point boldface, initially capitalized, flush left, 
+with one blank line before, and one after. If you require a third-order 
+heading (we discourage it), use 10-point Times, boldface, initially 
+capitalized, flush left, preceded by one blank line, followed by a period 
+and your text on the same line.
+
+%------------------------------------------------------------------------- 
+\SubSection{Footnotes}
+
+Please use footnotes sparingly%
+\footnote
+   {%
+     Or, better still, try to avoid footnotes altogether.  To help your 
+     readers, avoid using footnotes altogether and include necessary 
+     peripheral observations in the text (within parentheses, if you 
+     prefer, as in this sentence).
+   }
+and place them at the bottom of the column on the page on which they are 
+referenced. Use Times 8-point type, single-spaced.
+
+
+%------------------------------------------------------------------------- 
+\SubSection{References}
+
+List and number all bibliographical references in 9-point Times, 
+single-spaced, at the end of your paper. When referenced in the text, 
+enclose the citation number in square brackets, for example~\cite{ex1}. 
+Where appropriate, include the name(s) of editors of referenced books.
+
+%------------------------------------------------------------------------- 
+\SubSection{Illustrations, graphs, and photographs}
+
+All graphics should be centered. Your artwork must be in place in the 
+article (preferably printed as part of the text rather than pasted up). 
+If you are using photographs and are able to have halftones made at a 
+print shop, use a 100- or 110-line screen. If you must use plain photos, 
+they must be pasted onto your manuscript. Use rubber cement to affix the 
+images in place. Black and white, clear, glossy-finish photos are 
+preferable to color. Supply the best quality photographs and 
+illustrations possible. Penciled lines and very fine lines do not 
+reproduce well. Remember, the quality of the book cannot be better than 
+the originals provided. Do NOT use tape on your pages!
+
+%------------------------------------------------------------------------- 
+\SubSection{Color}
+
+The use of color on interior pages (that is, pages other
+than the cover) is prohibitively expensive. We publish interior pages in 
+color only when it is specifically requested and budgeted for by the 
+conference organizers. DO NOT SUBMIT COLOR IMAGES IN YOUR 
+PAPERS UNLESS SPECIFICALLY INSTRUCTED TO DO SO.
+
+%------------------------------------------------------------------------- 
+\SubSection{Symbols}
+
+If your word processor or typewriter cannot produce Greek letters, 
+mathematical symbols, or other graphical elements, please use 
+pressure-sensitive (self-adhesive) rub-on symbols or letters (available 
+in most stationery stores, art stores, or graphics shops).
+
+%------------------------------------------------------------------------ 
+\SubSection{Copyright forms}
+
+You must include your signed IEEE copyright release form when you submit 
+your finished paper. We MUST have this form before your paper can be 
+published in the proceedings.
+
+%------------------------------------------------------------------------- 
+\SubSection{Conclusions}
+
+Please direct any questions to the production editor in charge of these 
+proceedings at the IEEE Computer Society Press: Phone (714) 821-8380, or 
+Fax (714) 761-1784.
+
+%------------------------------------------------------------------------- 
+\nocite{ex1,ex2,ex3,ex4}
+\bibliographystyle{latex8}
+\bibliography{latex8}
+
+\end{document}
+
