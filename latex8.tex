@@ -88,71 +88,77 @@ tecnologías de control y por lo mismo mantenerse al día con el desarrollo de m
 
 
 %-------------------------------------------------------------------------
-\section{PIC18F45K50}
+\section{Materiales y métodos}
+
+\subsection{PIC18F45K50}
 
 PIC18F45K50 es un circuito integrado programable, también llamado microcontrolador, perteneciente a la familia de PIC18 y que puede ejecutar tareas programadas según sea su aplicación en los distintos sectores: industria, automoción, electrónica de consumo, entre otros.\\ \\
 Entre las características a destacar del PIC18F45K50 se encuentran su capacidad para soportar voltajes de operación de 4.2V hasta 5.5V, módulos de comunicación serial UART, A/E/USART, SPI, I 2C, módulo MSSP (SPI-I2C), 13 canales de ADC trabajando a 10 bits, 35 pines I/O disponibles, 2 comparadores análogos, una memoria tipo EEPROM de 256 bytes, memoria flash de 32 kB y frecuencia máxima de 48MHz~\cite{ex1}; suficientes para posicionar a este microcontrolador como uno de los más complejos y preferidos del momento, además de que su precio es considerablemente menor comparado con otros disponibles en el mercado.
 
 %-------------------------------------------------------------------------
-\Section{Diseño de prueba y desarrollo}
 
 %-------------------------------------------------------------------------
 %Primera versión
 
-\subsection{Primera Versión}
+\subsection{Placa entrenadora Versión 1.0}
 Consistió en el diseño de un circuito de prueba al que denominamos versión 1.0; de inicio se dispuso de un software de uso libre para la automatización del diseño electrónico (EDA) de los diagramas de circuito, los cuales incluyeron los siguientes componentes: un módulo robusto de alimentación, botón RESET, led indicador de alimentación ya sea vía PIKIT3 o USB, salida por PIN del PIC18F45K50 y módulo de sensores (conformado por HC-06, NRF24L01, 4 leds, teclado, buzzer, y un potenciómetro para regular el brillo de la pantalla LCD). \\
 La primera versión contó con tecnología through hole (THT), favoreciendo las pruebas de fuentes de alimentación a las que se sometieron cada uno de los módulos por separado. Posteriormente, para evaluar su correcto funcionamiento integral, se utilizó un
 código DEMO para la realización simultánea de pruebas de comunicación vía serial, SPI y $I^{2}$C, como se muestra en la Fig.~\ref{fig:1}
 
-\Img{8.5cm}{6.3cm}{Primera_Version.pdf}{ Primera versión del diagrama de
-circuito}{fig:1} Después de verificar el procedimiento anterior, se siguió con el dibujo del circuito impreso teniendo como premisa de diseño no exceder un tamaño de 10x10cm a fin de presentar un producto compacto y atractivo, de fácil acceso y uso para el usuario.
+\Img{8.5cm}{6.3cm}{Primera_Version.pdf}{Diagrama de circuito Verión 1.0}{fig:1} Después de verificar el procedimiento anterior, se siguió con el dibujo del circuito impreso teniendo como premisa de diseño no exceder un tamaño de 10x10cm a fin de presentar un producto compacto y atractivo, de fácil acceso y uso para el usuario.
 En la Fig.~\ref{fig:2} se muestra el diagrama de circuito impreso propuesto.
-\Img{6.5cm}{6.0cm}{primera_version_pcb}{Diagrama del circuito impreso}{fig:2}
+\Img{6.5cm}{6.0cm}{primera_version_pcb}{Diagrama de circuito impreso Versión 1.0}{fig:2}
 Como método para evitar errores de diseño al dibujar el circuito impreso, nos apoyamos en la visualización 3D que se puede apreciar en la Fig.~\ref{fig:3} y en el estudio minucioso del modelo.
-\Img{8.5cm}{7.0cm}{primera_version_3d}{Modelo 3D del circuito
-impreso}{fig:3}
+\Img{8.5cm}{7.0cm}{primera_version_3d}{Modelo 3D de circuito impreso Versión 1.0}{fig:3}
 Una vez obtenida la alineación de todos los componentes, se imprimió el diseño del circuito en la placa que resulta en la forma final que se advierte en la Fig.~\ref{fig:4}
-\Img{8.5cm}{7.0cm}{primera_version_final}{Placa de desarrollo}{fig:4} 
+\Img{8.5cm}{7.0cm}{primera_version_final}{Placa de desarrollo Versión 1.0}{fig:4} 
 Gracias a este diseño se comprobó que cada uno de los módulos funcionaba correctamente. 
 
 %-------------------------------------------------------------------------
 
 %Segunda versión
-\subsection{Segunda Versión}
-Para hacer la placa mas funcional se decidió remover los componentes through hole y sustituirlo por elementos SMD además se agrego lo siguiente: pueto usb tipo B con posibilidad de programar el PIC vía USB 2.0, alimentación por medio de USB, dos salidas por PIN del PIC18F45K50, dos salidas de 5v y 3.3v, 7 led's que cubren el PORTA, un control de led's,
-un control BUZZER, led indicador de activación del BUZZER,  potenciómetro para ADC, control de ADC y brillo automático en la pantalla LCD esto dió lugar a la versión 2.0.
-El esquemático del circuito que satisface las anteriores descripciones se muestra en la figura~\ref{fig:5}
-\Img{8.0cm}{5.5cm}{Segunda_Version}{Esquemático de la segunda versión}{fig:5}
-Las medidas de construcción se redujeron a 9.017cm x 9.906cm esto fue un cambio positivo ya que se agregaron mas elementos en un espacio menor. La distribución de elementos se puede apreciar en la figura~\ref{fig:6}. 
-\Img{6.5cm}{6.0cm}{segunda_version_pcb}{Diagrama del circuito impreso segunda versión}{fig:6}
-Nuevamente se toma como referencia el modelo 3D para descartar algún error de construcción antes de imprimir el circuito, el modelo 3D se puede apreciar en la figura~\ref{fig:7}.
-\Img{7.5cm}{6.2cm}{segunda_version_3d}{Modelo 3D del circuito impreso segunda versión}{fig:7}
-Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:8}
-\Img{7.5cm}{7.0cm}{segunda_version_final}{Placa de desarrollo segunda versión}{fig:8}
+\subsection{Placa entranadora Versión 2.0}
+Esta nueva versión parte del diseño descrito anteriormente, removiéndose los elementos THT para sustituirlos por tecnología de montaje superficial (SMD); asimismo, se añadieron: 2 salidas por PIN del PIC18F45K50, salidas de 3.3V y 5V, 7leds que cubren el PORTA, un control de leds, un control buzzer, led indicador de activación del buzzer, potenciómetro para ADC, control de ADC y brillo automático en la pantalla LCD. Esta serie de cambios permitieron la Versión 2.0 representada inicialmente en el diagrama de la Fig.~\ref{fig:5}
+\Img{8.0cm}{5.5cm}{Segunda_Version}{Diagrama de circuito Versión 2.0}{fig:5}
+
+Por consecuencia se ajustó el dibujo del circuito impreso para agregar los nuevos elementos, sin embargo, cabe destacar que las medidas de diseño se redujeron a 9.017cm x 9.906cm como se muestra en la Fig.~\ref{fig:6}. 
+\Img{6.5cm}{6.0cm}{segunda_version_pcb}{Diagrama de circuito impreso Versión 2.0}{fig:6}
+
+Nuevamente recurrimos al análisis a partir de un modelo 3D para evitar posibles fallas en el dibujo del circuito impreso, como se puede apreciar en la Fig.\ref{fig:7}.
+\Img{7.5cm}{6.2cm}{segunda_version_3d}{Modelo 3D de circuito impreso Versión 2.0}{fig:7}
+
+Una vez obtenida la alineación de todos los componentes, se imprimió el diseño del circuito en la placa que resulta en la forma final que se advierte en la Fig.~\ref{fig:8}
+\Img{7.5cm}{7.0cm}{segunda_version_final}{Placa de desarrollo Versión 2.0}{fig:8}
 
 
 %------------------------------------------------------------------------- 
 %Tercera versión
-\subsection{Tercera Versión}
-Finalmente se presenta la versión mas nueva donde se agregaron nuevas funcionalidades que son las siguientes: Puerto USB tipo C, nuevo sistema de alimentación, pantalla tipo OLED, tres push boton para interrupciones, modo de programación con Bootloader y 3 display de 7 segmentos unificados, todo esto se muestra en la figura~\ref{fig:9}.
-\Img{8.5cm}{7.0cm}{Tercera_Version}{Esquemático de la tercera versión}{fig:9}
-Las medidas de construcción se redujeron a 7.080cm x 8.050cm con esta versión se pudo lograr un nuevo tamaño que es un cambio positivo. La distribución de elementos se puede apreciar en la figura~\ref{fig:10}
-\Img{7.5cm}{7.0cm}{tercera_version_pcb}{Diagrama del circuito impreso tercera versión}{fig:10}
-\begin{enumerate}[label=\emph{\Alph*.}] 
-  \item \textbf{Modulo de Programación} se fijo una entrada para el PIKIT3 que es el programador oficial que nos proporciona Microchip para la familia PIC18, teniendo como opción grabar el programa hexadecimal dentro del software del PIKIT3 o en el IDE MPLAB. También se realizó las conexiones pertinentes para habilitar la programación vía USB.   
- 
-  \item \textbf{Conjunto de push button} se estableció un botón por cada interrupción del microcontrolador: \textit{INT0, INT1 y INT2}; en los pines correspondientes \textit{RB0, RB1 y  RB2}, dichas interrupciones serán activadas por software. La configuración de los push button es ``Pull Down''. Las aplicaciones que se le pueden dar a los push button son: interrupciones, modo Bootloader y de uso ordinario.
+\subsection{Placa entranadora Versión 3.0}
+En la tercera y más reciente versión se agregó un puerto USB tipo C, nuevo sistema de alimentación, pantalla OLED, 3 push button para interrupciones, modo de programación con bootloader y 3 display de 7 segmentos unificados; todo esto se dispone en el diagrama de la Fig.~\ref{fig:9}.
+\Img{8.5cm}{7.0cm}{Tercera_Version}{Diagrama de circuito Versión 3.0}{fig:9}
 
+Continuando con el diseño del circuito impreso, una vez más se consiguió reducir las medidas de construcción de la placa en un 37\% aproximado respecto a la versión anterior, quedando de 7.080 x 8.050 cm. \\ 
+Los componentes de la placa de entrenamiento propuesta en este estudio se describen a continuación en la Fig.~\ref{fig:10}
+
+\Img{7.5cm}{7.0cm}{tercera_version_pcb}{Diagrama de circuito impreso Versión 3.0}{fig:10}
+\begin{enumerate}[label=\emph{\Alph*.}] 
+  \item \textbf{Modulo de Programación}\\ Se agregó una entrada para el PIKIT4, que es el programador oficial que nos proporciona la empresa Microchip. para la familia PIC18; este permite grabar un programa hexadecimal dentro del software del PIKIT3 o en el IDE MPLAB. También se realizaron las conexiones pertinentes para habilitar la  programación vía USB.
  
-  \item \textbf{Display 7 Segmentos unificados} se conectó en la salida de cada display un transistor npn en configuración switch, para su activación por medio de software. Se protegió cada led del 7 segmentos con la resistencia que el fabricante propone~\cite{ex2}.
-  \item \textbf{Buzzer y ADC}. Estos dos elementos están conectados en el PORTE, el BUZZER tiene un control de activación que no es más que un jumper puente corto circuito y un led que indica cuando está en funcionamiento. El módulo del ADC está conformado por un Dip switch que controla la conexión a los 5v, para variar el voltaje el módulo cuenta con un potenciómetro. 
-  \item \textbf{Módulo de LED's} está conectado al PORTA y en total son 8 led's. Este modulo tiene un control de activación formado por un jumper puente corto circuito.
-  \item \textbf{Módulo bluetooth y radiofrecuencia} this 
+  \item \textbf{Conjunto de push button}\\ Se colocó un botón con configuración pull-down por cada interrupción del microcontrolador: \textit{INT0, INT1 y INT2}; en los pines correspondientes a \textit{RB0, RB1 y RB2}, dichas interrupciones son activadas por medio de software. \\    
+Las aplicaciones que se le pueden dar a los push button son: interrupciones, modo Bootloader y de uso ordinario.
+  \item \textbf{Display 7 Segmentos unificados}\\ Se conectó en la salida de cada display un transistor NPN en configuración switch para su activación por medio de software. Cada led del 7 segmentos es protegido con la resistencia propuesta por el fabricante.~\cite{ex2}.
+  \item \textbf{Buzzer y ADC}\\ Estos dos elementos están conectados en el PORTE, el BUZZER tiene un control de activación que no es más que un jumper puente corto circuito y un led que indica cuando está en funcionamiento. El módulo del ADC está conformado por un Dip switch que controla la conexión a los 5v, para variar el voltaje el módulo cuenta con un potenciómetro. 
+  \item \textbf{Módulo de LED's}\\ Está conectado al PORTA y en total son 8 led's. Este modulo tiene un control de activación formado por un jumper puente corto circuito.
+  \item \textbf{Módulo bluetooth}\\ Está diseñado para el sensor HC-06 dicho sensor permite la conexión a un smartphone, celular o PC de forma inalámbrica, en cuanto a las conexiones  tiene 4 pines: Vcc, GND, TX y RX.
+  \item \textbf{Módulo de radiofrecuencia}\\ Está diseñado para el sensor NRF24L01 que opera en la banda de 2.4GHz, son muy usados gracias a su funcionalidad, bajo consumo y bajo costo, con respecto a las conexiones tiene 7 pines: GND, Vcc, CE, CSN, SCK, MOSI y MISO.
+  \item \textbf{Teclado matricial 4x4}\\ Es un dispositivo integrado por 4 filas y 4 columnas para un total de 16 teclas. El teclado es de tipo membrana eso permite que el espacio requerido para su instalación sea menor.
+  \item \textbf{Pantalla OLED}\\ Este dispositivo vino a suplir las pantallas lcd, ya que son capaces de consumir menos recursos, brindar una imagen mas brillante y nítida además 
+    de comunicarse vía $I^{2}$C o SPI.
 \end{enumerate}
 
 
 Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:11}
-\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D del circuito impreso tercera versión}{fig:11}
+\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D de circuito impreso Versión 3.0}{fig:11}
 
 %-------------------------------------------------------------------------
 \Section{Instructions}
