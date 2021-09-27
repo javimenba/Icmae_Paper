@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex latex8"] 1632776979 "latex8.aux" "latex8.bbl" "latex8" 1632776998
+["bibtex latex8"] 1632780953 "latex8.aux" "latex8.bbl" "latex8" 1632780954
   "./latex8.bst" 1632372809 19535 0f8b4bbb95961e52095b222ab55a4fac ""
-  "latex8.aux" 1632776997 3814 a1d2e371119fd547b6056bcd03b06c1f "pdflatex"
+  "latex8.aux" 1632780954 3800 af3113b52ddeb63cd6b57d6888f0b8e9 "pdflatex"
   "latex8.bib" 1632690517 851 231e85262fe00e4cc1baabadd5a99411 ""
   (generated)
   "latex8.blg"
   "latex8.bbl"
-["pdflatex"] 1632776996 "latex8.tex" "latex8.pdf" "latex8" 1632776998
+["pdflatex"] 1632780953 "latex8.tex" "latex8.pdf" "latex8" 1632780954
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1617738065 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb.tfm" 1617738065 2300 14616918391efa49ac8b481a75fbdc1a ""
@@ -81,11 +81,11 @@
   "Img/tercera_version_3d.png" 1632615970 113892 fc380297426ac59aa6bcd2e61afe0ee6 ""
   "Img/tercera_version_pcb.png" 1632615884 106129 d676a28b34fd47c45abcdd660699a959 ""
   "Img/tercera_version_pcb_b.png" 1632776469 225444 c0f07c68bf280b3110a10db7367b336b ""
-  "latex8.aux" 1632776997 3814 a1d2e371119fd547b6056bcd03b06c1f "pdflatex"
-  "latex8.bbl" 1632776979 295 09098ad9662fed7db46998895ff7a92d "bibtex latex8"
+  "latex8.aux" 1632780954 3800 af3113b52ddeb63cd6b57d6888f0b8e9 "pdflatex"
+  "latex8.bbl" 1632780953 295 09098ad9662fed7db46998895ff7a92d "bibtex latex8"
   "latex8.sty" 1632372809 4653 348b16eb06088469fdb326a3255e9315 ""
-  "latex8.tex" 1632776995 23755 b1d669da2473b42ee69921cc5f9584aa ""
+  "latex8.tex" 1632780951 23741 0fd8659099b1203371d70b0f209a4a93 ""
   (generated)
-  "latex8.pdf"
   "latex8.log"
+  "latex8.pdf"
   "latex8.aux"
