@@ -317,6 +317,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 OUTPUT latex8.pdf
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
@@ -329,14 +330,13 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb.vf
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./Img/Primera_Version.pdf
 INPUT ./Img/Primera_Version.pdf
 INPUT Img/Primera_Version.pdf
 INPUT ./Img/Primera_Version.pdf
 INPUT ./Img/Primera_Version.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT ./Img/primera_version_pcb.png
 INPUT Img/primera_version_pcb.png
@@ -346,6 +346,10 @@ INPUT ./Img/primera_version_3d.png
 INPUT Img/primera_version_3d.png
 INPUT ./Img/primera_version_3d.png
 INPUT ./Img/primera_version_3d.png
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./Img/primera_version_final.png
 INPUT Img/primera_version_final.png
 INPUT ./Img/primera_version_final.png
@@ -354,8 +358,6 @@ INPUT ./Img/Segunda_Version.pdf
 INPUT Img/Segunda_Version.pdf
 INPUT ./Img/Segunda_Version.pdf
 INPUT ./Img/Segunda_Version.pdf
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./Img/segunda_version_pcb.png
 INPUT Img/segunda_version_pcb.png
 INPUT ./Img/segunda_version_pcb.png
@@ -378,8 +380,6 @@ INPUT ./Img/Tercera_Version.pdf
 INPUT Img/Tercera_Version.pdf
 INPUT ./Img/Tercera_Version.pdf
 INPUT ./Img/Tercera_Version.pdf
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./Img/tercera_version_pcb.png
 INPUT Img/tercera_version_pcb.png
 INPUT ./Img/tercera_version_pcb.png

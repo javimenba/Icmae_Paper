@@ -84,18 +84,30 @@ Si queremos avanzar en el mundo tecnológico se debe preparar para ello, por lo 
 %------------------------------------------------------------------------- 
 \Section{Introducción}
 \raggedbottom
-A medida que la tecnología crece, el plan de estudios y los desafíos en la industria están comprometidos a mantenerse al mismo ritmo, por lo tanto debemos incorporar herramientas que nos permita crecer y desarrollar nuevas tecnologías. No podemos hablar de un origen de las ``placas de desarrollo" pero podemos partir de los nuevos productos
-que siguen incorporándose día a día. Estos productos permiten el crecimiento en las
-tecnologías de control y por lo mismo mantenerse al día con el desarrollo de microcontroladores se vuelve un tanto complicado. 
+A medida que la tecnología avanza, profesionistas y estudiantes de Ingeniería Electrónica estamos comprometidos a seguir su ritmo; debido a esto, es necesario incorporar herramientas que nos permitan crecer y desarrollar estas nuevas tecnologías. En este contexto surgen los microcontroladores para facilitar nuestra vida cotidiana.
 
+Un microcontrolador es un circuito integrado programable que se ha integrado en varios sectores del mercado para realizar numerosas aplicaciones, permitiendo el crecimiento acelerado de la tecnología de control.
 
+Si bien, no podemos mencionar con precisión acerca del origen de estos, se conoce que la empresa Microchip Technology Inc. es líder en la fabricación de los Controles de Interfaz Periférica (PIC); su éxito radica en que tienen una gran variedad de productos a bajo costo, son versátiles y poseen una amplia disponibilidad de herramientas para su correcta programación.~\cite{ex1} 
+%1. RELACIONAR CON LA PLACA DE DESARROLLO
+%2. PLANTEAMIENTO DEL PROBLEMA. (Señala un vacío en la información respecto al objeto)
+%3. OBJETIVO DE ESTE ESTUDIO. ¿PARA QUÉ SE CONSTRUYE? PROPUESTA. Aquí puedes mencionar acerca del desarrollo de tus tres versiones. ¿Por qué tres versiones? ¿Qué se espera de la placa versión 3?
+% La tecnología crece, industria y demás debe mantenerse al tanto. Existen equipos que se actualizan di a día.
 
+En un principio la idea de construir una placa de desarrollo fue para apoyar a los estudiantes que estuvieran cursando alguna materia de programación en microcontroladores o relacionado al diseño de \textbf{PCB}, existe muy poca información sobre el diseño y construcción es posible que esto se deba a la falta de empatía sobre las necesidades que presenta un estudiante. 
+
+Por esta razón surge la primera versión, un diseño de dimensiones grandes por lo cuál no era tan amigable en diferentes aplicaciones pero cumplía satisfactoriamente con su objetivo principal que era apoyar a estudiantes, contaba exclusivamente con lo necesario para poder cumplir al margen sus proyectos escolares. 
+
+Luego se pensó llevar este proyecto hacía otro nivel,  no solo enfocarse en la rama estudiantil si no también llevarlo a la industria y darle una herramienta más a los egresados que constantemente se enfrentan a problemas técnicos en el campo laboral, se decidió reducir las dimensiones y agregar nuevos sensores que se adaptan a la industria esto dio origen a una segunda versión. 
+
+Finalmente se trabaja en un tercera versión, donde se podrán desarrollar aplicaciones para electrónica, óptica, sector salud, inteligencia artificial, entre otras. En resumen esta placa de desarrollo abarca un número considerable de áreas y ya no solo en un proyecto en específico. 
 %-------------------------------------------------------------------------
 \Section{Materiales y métodos}
 
 \SubSection{PIC18F45K50}
 
-PIC18F45K50 es un circuito integrado programable, también llamado microcontrolador, perteneciente a la familia de PIC18 y que puede ejecutar tareas programadas según sea su aplicación en los distintos sectores: industria, automoción, electrónica de consumo, entre otros.\\ \\
+PIC18F45K50 es un circuito integrado programable, también llamado microcontrolador, perteneciente a la familia de PIC18 y que puede ejecutar tareas programadas según sea su aplicación en los distintos sectores: industria, automoción, electrónica de consumo, entre otros.
+
 Entre las características a destacar del PIC18F45K50 se encuentran su capacidad para soportar voltajes de operación de 4.2V hasta 5.5V, módulos de comunicación serial UART, A/E/USART, SPI, I 2C, módulo MSSP (SPI-I2C), 13 canales de ADC trabajando a 10 bits, 35 pines I/O disponibles, 2 comparadores análogos, una memoria tipo EEPROM de 256 bytes, memoria flash de 32 kB y frecuencia máxima de 48MHz~\cite{ex1}; suficientes para posicionar a este microcontrolador como uno de los más complejos y preferidos del momento, además de que su precio es considerablemente menor comparado con otros disponibles en el mercado.
 
 %-------------------------------------------------------------------------
@@ -105,6 +117,7 @@ Entre las características a destacar del PIC18F45K50 se encuentran su capacidad
 
 \SubSection{Placa entrenadora Versión 1.0}
 Consistió en el diseño de un circuito de prueba al que denominamos versión 1.0; de inicio se dispuso de un software de uso libre para la automatización del diseño electrónico (EDA) de los diagramas de circuito, los cuales incluyeron los siguientes componentes: un módulo robusto de alimentación, botón RESET, led indicador de alimentación ya sea vía PIKIT3 o USB, salida por PIN del PIC18F45K50 y módulo de sensores (conformado por HC-06, NRF24L01, 4 leds, teclado, buzzer, y un potenciómetro para regular el brillo de la pantalla LCD). \\
+
 La primera versión contó con tecnología through hole (THT), favoreciendo las pruebas de fuentes de alimentación a las que se sometieron cada uno de los módulos por separado. Posteriormente, para evaluar su correcto funcionamiento integral, se utilizó un
 código DEMO para la realización simultánea de pruebas de comunicación vía serial, SPI y $I^{2}$C, como se muestra en la Fig.~\ref{fig:1}
 
