@@ -16,6 +16,8 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
 %\documentstyle[times,art10,twocolumn,latex8]{article}
 
 %------------------------------------------------------------------------- 
@@ -127,8 +129,26 @@ Por consecuencia se ajustó el dibujo del circuito impreso para agregar los nuev
 
 
 Nuevamente recurrimos al análisis a partir de un modelo 3D para evitar posibles fallas en el dibujo del circuito impreso, como se puede apreciar en la Fig.\ref{fig:7}.
-\Img{7.2cm}{6.2cm}{segunda_version_3d}{Modelo 3D de circuito impreso Versión 2.0 capa superior}{fig:7}
-\Img{7.2cm}{6.2cm}{segunda_version_pcb_b}{Modelo 3D de circuito impreso Versión 2.0 capa inferior}{fig:6}
+
+\begin{figure}[htbp]
+  \begin{subfigure}[b]{0.4\columnwidth}
+    \includegraphics[width=4.3cm, height=4.3cm]{Img/segunda_version_3d.png}
+    % \caption{Primera imagen.}
+    %\label{fig:f13}
+  \end{subfigure}
+  \hspace{0.7cm}
+  \begin{subfigure}[b]{0.4\columnwidth}
+    \includegraphics[width=4.3cm, height=4.3cm]{Img/segunda_version_pcb_b.png}
+   % \caption{Segunda imagen.}
+    %\label{fig:f23}
+  \end{subfigure}
+   \caption{\centering \textbf{Modelo 3D de circuito impreso Versión 2.0}} 
+   \label{fig:7}
+ \end{figure}
+%\Img{7.2cm}{6.2cm}{segunda_version_3d}{Modelo 3D de circuito impreso Versión 2.0 capa superior}{fig:7}
+%\Img{7.2cm}{6.2cm}{segunda_version_pcb_b}{Modelo 3D de circuito impreso Versión 2.0 capa inferior}{fig:6}
+
+
 Una vez obtenida la alineación de todos los componentes, se imprimió el diseño del circuito en la placa que resulta en la forma final que se advierte en la Fig.~\ref{fig:8}
 \Img{7.5cm}{7.0cm}{segunda_version_final}{Placa de desarrollo Versión 2.0}{fig:8}
 
@@ -149,40 +169,50 @@ Los componentes de la placa de entrenamiento propuesta en este estudio se descri
   \item \textbf{Conjunto de push button}\\ Se colocó un botón con configuración pull-down por cada interrupción del microcontrolador: \textit{INT0, INT1 y INT2}; en los pines correspondientes a \textit{RB0, RB1 y RB2}, dichas interrupciones son activadas por medio de software. \\    
 Las aplicaciones que se le pueden dar a los push button son: interrupciones, modo Bootloader y de uso ordinario.
   \item \textbf{Display 7 Segmentos unificados}\\ Se conectó en la salida de cada display un transistor NPN en configuración switch para su activación por medio de software. Cada led del 7 segmentos es protegido con la resistencia propuesta por el fabricante.~\cite{ex2}.
-  \item \textbf{Buzzer y ADC}\\ Estos dos elementos están conectados en el PORTE, el BUZZER tiene un control de activación que no es más que un jumper puente corto circuito y un led que indica cuando está en funcionamiento. El módulo del ADC está conformado por un Dip switch que controla la conexión a los 5v, para variar el voltaje el módulo cuenta con un potenciómetro. 
-  \item \textbf{Módulo de LED's}\\ Está conectado al PORTA y en total son 8 led's. Este modulo tiene un control de activación formado por un jumper puente corto circuito.
-  \item \textbf{Módulo bluetooth}\\ Está diseñado para el sensor HC-06 dicho sensor permite la conexión a un smartphone, celular o PC de forma inalámbrica, en cuanto a las conexiones  tiene 4 pines: Vcc, GND, TX y RX.
-  \item \textbf{Módulo de radiofrecuencia}\\ Está diseñado para el sensor NRF24L01 que opera en la banda de 2.4GHz, son muy usados gracias a su funcionalidad, bajo consumo y bajo costo, con respecto a las conexiones tiene 7 pines: GND, Vcc, CE, CSN, SCK, MOSI y MISO.
-  \item \textbf{Teclado matricial 4x4}\\ Es un dispositivo integrado por 4 filas y 4 columnas para un total de 16 teclas. El teclado es de tipo membrana eso permite que el espacio requerido para su instalación sea menor.
-  \item \textbf{Pantalla OLED}\\ Este dispositivo vino a suplir las pantallas lcd, ya que son capaces de consumir menos recursos, brindar una imagen mas brillante y nítida además 
-    de comunicarse vía $I^{2}$C o SPI.
+  \item \textbf{Buzzer y ADC}\\ Estos dos elementos se conectan en el PORTE. El buzzer posee un control de activación que no es más que un jumper puente corto circuito y un LED para indicar cuando está en funcionamiento. El módulo del ADC se constituye por un DIP switch que controla la conexión a los 5V; para variar el voltaje el módulo se incluye un potenciómetro.
+  \item \textbf{Módulo de LED's}\\ El juego incluye un total de 8 LEDs y se conecta al   PORTA; este módulo contiene un control de activación conformado por un jumper puente corto circuito.
+  \item \textbf{Módulo bluetooth}\\ Diseñado para el sensor HC-06 que permite conexión inalámbrica a un smartphone, celular o PC; en cuanto a las conexiones, cuenta con 4 pines: Vcc, GND, TX y RX.
+  \item \textbf{Módulo de radiofrecuencia}\\ Diseñado para el sensor NRF24L01 que opera en la banda de 2.4GHz; son muy usados gracias a su funcionalidad, bajo consumo y bajo costo. Con respecto a las conexiones, tiene 7 pines: GND, Vcc, CE, CSN, SCK, MOSI y MISO.
+  \item \textbf{Teclado matricial 4x4}\\ Es un dispositivo integrado por 4 filas y 4 columnas para un total de 16 teclas. El teclado es de tipo membrana, lo que permite que el espacio requerido para su instalación sea menor.
+  \item \textbf{Pantalla OLED}\\ Este dispositivo vino a suplir las pantallas LCD, ya
+que es capaz de consumir menos recursos, brindar una imagen más brillante y nítida, además de comunicarse vía $I^{2}$C o SPI.
 \end{enumerate}
 
 
 Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:11}
-\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D de circuito impreso Versión 3.0 capa superior}{fig:11}
-\Img{6.9cm}{6.0cm}{tercera_version_pcb_b}{Modelo 3D de circuito impreso Versión 3.0 capa inferior}{fig:11}
+
+\begin{figure}[htbp]
+  \begin{subfigure}[b]{0.4\columnwidth}
+     \includegraphics[width=4.3cm, height=4.3cm]{Img/tercera_version_3d.png}
+    % \caption{Primera imagen.}
+    %\label{fig:f13}
+  \end{subfigure}
+   \hspace{0.7cm}
+  \begin{subfigure}[b]{0.4\columnwidth}
+    \includegraphics[width=4.3cm, height=4.3cm]{Img/tercera_version_pcb_b.png}
+   % \caption{Segunda imagen.}
+    %\label{fig:f23}
+  \end{subfigure}
+   \caption{\centering \textbf{Modelo 3D de circuito impreso Versión 3.0}} 
+   \label{fig:11}
+ \end{figure}
+
+
+
+%\Img{7.9cm}{7.0cm}{tercera_version_3d}{Modelo 3D de circuito impreso Versión 3.0 capa superior}{fig:11}
+%\Img{6.9cm}{6.0cm}{tercera_version_pcb_b}{Modelo 3D de circuito impreso Versión 3.0 capa inferior}{fig:11}
 %-------------------------------------------------------------------------
+%Resultados y discusión
 \Section{Resultados y discusión}
-
-La versión 1.0 fue pensada para cumplir una sola función adaptada a un sistema  de alarma, la cuál cumple satisfactoriamente en cuanto a posibles fallas se encontró un sobrecalentamiento en un elemento del módulo de alimentación, el cuál se pudo dar solución realizando una prueba de corto circuito encontrando el origen de la falla en el elemento regulador LM7805, es posible que esta pieza presentará una falla de fabricación por lo tanto se retiró dicho componente y sustituirlo por uno nuevo. En la Fig.12 se puede apreciar un DEMO.\\
-
-En la versión 2.0 se consiguió agregar más elementos a la vez que se redujo el tamaño
-de la placa, esto es el resultado de utilizar componentes de montaje superficial (SMD) es decir, manejar elementos más pequeños permite una mejor distribución dentro de una área de trabajo. El tamaño de los encapsulados rectangulares SMD que se utilizo en esta versión fue de 1206( 3.2 x 1.6 mm ), se decidió por este tamaño ya que se consideró que se tendría mayor facilidad en el momento del ensamblaje. En la Fig.13 se puede apreciar un DEMO.\\
-
-En la versión 3.0 finalmente se optó por reducir el tamaño de los encapsulados rectangulares SMD a 0805( 2.0 x 1.25 mm ) en consecuencia la proporción de tamaño de la placa se redujo aún mas a consideración de la versión 2.0. Se implemento un nuevo sistema de alimentación donde los elementos through hole (THT) que lo conformaban fueron sustituidos por componentes SMD, se cambió el grosor de las pistas en esta sección de la placa para brindar mas vida útil.\\
-
-
-Por último con respecto al tamaño del diseño del circuito impreso de la primera versión se logro optimizar el espacio gracias a la tecnología de fabricación de circuitos de doble cara, el porcentaje que se redujo de la versión 1.0 respecto a la versión 3.0 es de 49.5\% en otras palabras se convierte en una placa atractiva para sus diferentes uso y campos de trabajo dado que, por su flexibilidad de tamaño se puede implementar en un gran número de áreas que abarcan desde ingeniería, medicina, química, educación, entre otras.\\
-
-En definitiva se debe motivar a las nuevas generaciones, estudiantes de ingeniería electrónica a profundizar sobre el diseño de circuitos electrónicos y brindarle esas herramientas prácticas para que sean capaces de realizar productos acabados que se convierta en un incremento de la producción de la zona y del país. \\ \\
-
-``\textit{No hay emoción más intensa para un inventor que ver unas de sus creaciones
-funcionando}''\hspace*{1.5cm} \textbf{\scriptsize ~Nikola Tesla}
-
-
+La Versión 1.0 fue pensada para cumplir una única función adaptada a un sistema de alarma, la cual cumple satisfactoriamente. En cuanto a posibles fallas se encontró un sobrecalentamiento en un elemento del módulo de alimentación; se solucionó realizando una prueba de corto circuito para encontrar el origen de la falla en el elemento regulador LM7805. Es posible que esta pieza presentara un defecto de fabricación, por lo que se retiró dicho componente y se sustituyó por uno nuevo. En la Fig.12 se presenta un DEMO.\\
+En la Versión 2.0 es importante resaltar que se consiguió agregar más elementos a la vez que se redujo el tamaño de la placa, resultado de utilizar SMD, es decir, incorporar elementos más pequeños nos permitió optimizar mejor el espacio de trabajo. El tamaño de los encapsulados rectangulares SMD que se utilizó en esta versión fue de 1206 (3.2 x 1.6
+mm); se optó por estos por su fácil manipulación en el momento de ensamblaje. En la Fig.13 se presenta un DEMO.\\
+En la Versión 3.0, y más reciente, se logró reducir el tamaño de los encapsulados rectangulares SMD a 0805 (2.0 x 1.25 mm); en consecuencia, la proporción del tamaño de la placa también se redujo. También se implementó un nuevo sistema de alimentación donde los elementos through hole(THT) que lo conformaban fueron sustituidos por componentes SMD y se cambió el grosor de las pistas en esta sección de la placa para aumentar su vida útil. A partir de la Versión 1.0 se ha conseguido reducir el tamaño del circuito impreso gracias a la tecnología de fabricación de circuitos de doble cara, permitiendo optimizar el recurso; de la Versión 1.0 a 2.0 se redujo un 10.68\%, de la Versión 2.0 a 3.0 hasta un 37\%, y de la primera respecto a la última el resultado fue de 49.5\%. En otras palabras, esta placa consigue ser atractiva por su multifuncionalidad en diferentes campos de trabajo debido a que su tamaño le permite ser accesible y flexible.
 %-------------------------------------------------------------------------
-
+%Conclusiones
+\Section{Conclusiones}
+En definitiva, consideramos que se debe motivar a las nuevas generaciones de estudiantes de Ingeniería Electrónica a profundizar en el diseño de circuitos electrónicos y brindarles las herramientas necesarias para que sean capaces de realizar prácticas a nivel del ejercicio profesional y así generar un incremento en la producción de la zona y el país e ir al corriente con las tecnologías globales.
+%-------------------------------------------------------------------------
 \begin{comment}
 \Section{Instructions}
 
