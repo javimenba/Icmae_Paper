@@ -74,9 +74,15 @@ SecondAuthor@institution2.com\\
 \thispagestyle{empty}
 
 \begin{abstract}
-  El campo de la Ingeniería en Comunicaciones y Electrónica es pilar en los avances tecnológicos cuyo desarrollo y crecimiento ha sido exponencial en los últimos años. Uno de los principales objetivos que se busca dentro de la Ingeniería Electrónica es resolver tareas diversas de manera eficiente y rápida.
- En este punto los  microcontroladores juegan un papel importante ya que son pequeños y pueden ser programados para que realicen  acciones por  medio de instrucciones que nosotros deseamos. 
-Si queremos avanzar en el mundo tecnológico se debe preparar para ello, por lo tanto es esencial desarrollar habilidades en el  software del microcontrolador y utilizar un hardware que nos permita comprobar el software escrito. En este estudio se presenta una placa de prueba y desarrollo en la que se puede programar un microcontrolador PIC18F4550 o un PIC18F45K50, dejando atrás la manera convencional de unir el microcontrolador con la parte electrónica y dando lugar a la flexibilidad de trabajar con módulos dentro de la placa. El conjunto incluye pantalla tipo OLED, conjunto de leds, teclado matricial, 7 segmentos unificados, bluetooth, conexión wifi, grupo de botones, puerto USB tipo c, buzzer, potenciómetro para el adc, sistema de alimentación externa, módulo de radiofrecuencia y la posibilidad de programar por medio de PIKIT3 o vía USB.
+El campo de la Ingeniería en Comunicaciones y Electrónica es pilar para los avances tecnológicos cuyo crecimiento y desarrollo ha sido exponencial en los últimos años. Uno de los principales objetivos que se busca dentro de la Ingeniería Electrónica es resolver tareas diversas de manera eficiente y rápida: en este punto, los microcontroladores juegan un papel importante ya que son versátiles y pueden ser programados para que ejecuten tareas según sea su uso. Es por eso que, si queremos mantenernos actualizados, debemos prepararnos para ello, por lo tanto, es esencial desarrollar habilidades en el
+software del microcontrolador y utilizar un hardware que nos permita comprobar el software escrito. 
+
+
+En este estudio se presenta la evolución de una placa de prueba y desarrollo en la que se puede programar un microcontrolador PIC18F4550 o un PIC18F45K50,
+dejando atrás la manera convencional de unir el microcontrolador con la parte
+electrónica y dando lugar a la flexibilidad de trabajar con módulos dentro de la placa. El conjunto propuesto incluye pantalla tipo OLED, conjunto de leds, teclado matricial, 7 segmentos unificados, bluetooth, conexión WiFi, grupo de botones, puerto USB tipo C, buzzer, potenciómetro para el ADC, sistema de alimentación externa, módulo de radiofrecuencia y la posibilidad de programar por medio de PIKIT3 o vía USB.
+
+\textbf{Palabras clave:} ingeniería electrónica, microcontroladores, PIC18F45K50, placa de desarrollo, diseño PCB
 \end{abstract}
 
 
@@ -84,23 +90,27 @@ Si queremos avanzar en el mundo tecnológico se debe preparar para ello, por lo 
 %------------------------------------------------------------------------- 
 \Section{Introducción}
 \raggedbottom
-A medida que la tecnología avanza, profesionistas y estudiantes de Ingeniería Electrónica estamos comprometidos a seguir su ritmo; debido a esto, es necesario incorporar herramientas que nos permitan crecer y desarrollar estas nuevas tecnologías. En este contexto surgen los microcontroladores para facilitar nuestra vida cotidiana.
+A medida que la tecnología avanza, profesionistas y estudiantes de Ingeniería Electrónica estamos comprometidos a seguir su ritmo; debido a esto, es necesario incorporar herramientas que nos permitan crecer y desarrollar estas nuevas tecnologías. En este contexto surgen los microcontroladores para facilitar nuestra vida cotidiana.\\
 
-Un microcontrolador es un circuito integrado programable que se ha integrado en varios sectores del mercado para realizar numerosas aplicaciones, permitiendo el crecimiento acelerado de la tecnología de control.
+Un microcontrolador es un circuito integrado programable que se ha integrado en varios sectores del mercado para realizar numerosas aplicaciones, permitiendo el crecimiento acelerado de la tecnología de control.\\
 
-Si bien, no podemos mencionar con precisión acerca del origen de estos, se conoce que la empresa Microchip Technology Inc. es líder en la fabricación de los Controles de Interfaz Periférica (PIC); su éxito radica en que tienen una gran variedad de productos a bajo costo, son versátiles y poseen una amplia disponibilidad de herramientas para su correcta programación.~\cite{ex1} 
+Si bien, no podemos mencionar con precisión acerca del origen de estos, se conoce que la empresa Microchip Technology Inc. es líder en la fabricación de los Controles de Interfaz Periférica (PIC); su éxito radica en que tienen una gran variedad de productos a bajo costo, son versátiles y poseen una amplia disponibilidad de herramientas para su correcta programación.~\cite{ex1}\\ 
 %1. RELACIONAR CON LA PLACA DE DESARROLLO
 %2. PLANTEAMIENTO DEL PROBLEMA. (Señala un vacío en la información respecto al objeto)
 %3. OBJETIVO DE ESTE ESTUDIO. ¿PARA QUÉ SE CONSTRUYE? PROPUESTA. Aquí puedes mencionar acerca del desarrollo de tus tres versiones. ¿Por qué tres versiones? ¿Qué se espera de la placa versión 3?
 % La tecnología crece, industria y demás debe mantenerse al tanto. Existen equipos que se actualizan di a día.
 
-En un principio la idea de construir una placa de desarrollo fue para apoyar a los estudiantes que estuvieran cursando alguna materia de programación en microcontroladores o relacionado al diseño de \textbf{PCB}, existe muy poca información sobre el diseño y construcción es posible que esto se deba a la falta de empatía sobre las necesidades que presenta un estudiante. 
 
-Por esta razón surge la primera versión, un diseño de dimensiones grandes por lo cuál no era tan amigable en diferentes aplicaciones pero cumplía satisfactoriamente con su objetivo principal que era apoyar a estudiantes, contaba exclusivamente con lo necesario para poder cumplir al margen sus proyectos escolares. 
+En un principio, la idea de construir una placa de desarrollo fue para apoyar a los estudiantes que estuvieran cursando materias en programación de microcontroladores o diseño de PCB, pues existe poca información respecto al tema; es posible que esto se deba a la falta de empatía a las necesidades que presenta un estudiante.\\
 
-Luego se pensó llevar este proyecto hacía otro nivel,  no solo enfocarse en la rama estudiantil si no también llevarlo a la industria y darle una herramienta más a los egresados que constantemente se enfrentan a problemas técnicos en el campo laboral, se decidió reducir las dimensiones y agregar nuevos sensores que se adaptan a la industria esto dio origen a una segunda versión. 
+Por esta razón, surge la Versión 1.0, un diseño de dimensiones grandes que resulta poco accesible para diferentes aplicaciones, pero cumple satisfactoriamente con su objetivo principal; éste contaba con lo necesario para poder cumplir al margen con proyectos escolares.\\
 
-Finalmente se trabaja en un tercera versión, donde se podrán desarrollar aplicaciones para electrónica, óptica, sector salud, inteligencia artificial, entre otras. En resumen esta placa de desarrollo abarca un número considerable de áreas y ya no solo en un proyecto en específico. 
+Posteriormente, se pensó mejorar este proyecto, no solo enfocado a la escuela si no también a la industria con el fin de brindarle una herramienta más a los
+egresados de la carrera de Ingeniería Electrónica quienes constantemente se enfrentan a problemas técnicos para la inserción al campo laboral; para esto,
+se añadieron nuevos sensores que se adaptan a las aplicaciones de la industria y se logró reducir las dimensiones de la placa para dar paso a la Versión 2.0\\
+
+Por último, se trabajó la Versión 3.0 donde se podrán desarrollar aplicaciones para diversas áreas del conocimiento como son la electrónica, óptica inteligencia artificial, biomédica, entre otras. En otras palabras, esta placa pasa de tener una única función a ser multifuncional.
+
 %-------------------------------------------------------------------------
 \Section{Materiales y métodos}
 
@@ -108,7 +118,7 @@ Finalmente se trabaja en un tercera versión, donde se podrán desarrollar aplic
 
 PIC18F45K50 es un circuito integrado programable, también llamado microcontrolador, perteneciente a la familia de PIC18 y que puede ejecutar tareas programadas según sea su aplicación en los distintos sectores: industria, automoción, electrónica de consumo, entre otros.
 
-Entre las características a destacar del PIC18F45K50 se encuentran su capacidad para soportar voltajes de operación de 4.2V hasta 5.5V, módulos de comunicación serial UART, A/E/USART, SPI, I 2C, módulo MSSP (SPI-I2C), 13 canales de ADC trabajando a 10 bits, 35 pines I/O disponibles, 2 comparadores análogos, una memoria tipo EEPROM de 256 bytes, memoria flash de 32 kB y frecuencia máxima de 48MHz~\cite{ex1}; suficientes para posicionar a este microcontrolador como uno de los más complejos y preferidos del momento, además de que su precio es considerablemente menor comparado con otros disponibles en el mercado.
+Entre las características a destacar del PIC18F45K50 se encuentran su capacidad para soportar voltajes de operación de 4.2V hasta 5.5V, módulos de comunicación serial UART, A/E/USART, SPI, $I^{2}$C, módulo MSSP (SPI-I2C), 13 canales de ADC trabajando a 10 bits, 35 pines I/O disponibles, 2 comparadores análogos, una memoria tipo EEPROM de 256 bytes, memoria flash de 32 kB y frecuencia máxima de 48MHz~\cite{ex1}; suficientes para posicionar a este microcontrolador como uno de los más complejos y preferidos del momento, además de que su precio es considerablemente menor comparado con otros disponibles en el mercado.
 
 %-------------------------------------------------------------------------
 
@@ -119,10 +129,12 @@ Entre las características a destacar del PIC18F45K50 se encuentran su capacidad
 Consistió en el diseño de un circuito de prueba al que denominamos versión 1.0; de inicio se dispuso de un software de uso libre para la automatización del diseño electrónico (EDA) de los diagramas de circuito, los cuales incluyeron los siguientes componentes: un módulo robusto de alimentación, botón RESET, led indicador de alimentación ya sea vía PIKIT3 o USB, salida por PIN del PIC18F45K50 y módulo de sensores (conformado por HC-06, NRF24L01, 4 leds, teclado, buzzer, y un potenciómetro para regular el brillo de la pantalla LCD). \\
 
 La primera versión contó con tecnología through hole (THT), favoreciendo las pruebas de fuentes de alimentación a las que se sometieron cada uno de los módulos por separado. Posteriormente, para evaluar su correcto funcionamiento integral, se utilizó un
-código DEMO para la realización simultánea de pruebas de comunicación vía serial, SPI y $I^{2}$C, como se muestra en la Fig.~\ref{fig:1}
+código DEMO para la realización simultánea de pruebas de comunicación vía serial, SPI y $I^{2}$C, como se muestra en la Fig.~\ref{fig:1}\\
 
-\Img{8.5cm}{6.3cm}{Primera_Version.pdf}{Diagrama de circuito Verión 1.0}{fig:1} Después de verificar el procedimiento anterior, se siguió con el dibujo del circuito impreso teniendo como premisa de diseño no exceder un tamaño de 10x10cm a fin de presentar un producto compacto y atractivo, de fácil acceso y uso para el usuario.
-En la Fig.~\ref{fig:2} se muestra el diagrama de circuito impreso propuesto.
+Después de verificar el procedimiento anterior, se siguió con el dibujo del circuito impreso teniendo como premisa de diseño no exceder un tamaño de 10x10cm a fin de presentar un producto compacto y atractivo, de fácil acceso y uso para el usuario.En la Fig.~\ref{fig:2} se muestra el diagrama de circuito impreso propuesto.
+
+\Img{8.5cm}{6.3cm}{Primera_Version.pdf}{Diagrama de circuito Verión 1.0}{fig:1} 
+
 \Img{6.5cm}{6.0cm}{primera_version_pcb}{Diagrama de circuito impreso Versión 1.0}{fig:2}
 Como método para evitar errores de diseño al dibujar el circuito impreso, nos apoyamos en la visualización 3D que se puede apreciar en la Fig.~\ref{fig:3} y en el estudio minucioso del modelo.
 \Img{8.5cm}{7.0cm}{primera_version_3d}{Modelo 3D de circuito impreso Versión 1.0}{fig:3}
@@ -134,16 +146,17 @@ Gracias a este diseño se comprobó que cada uno de los módulos funcionaba corr
 
 %Segunda versión
 \SubSection{Placa entranadora Versión 2.0}
-Esta nueva versión parte del diseño descrito anteriormente, removiéndose los elementos THT para sustituirlos por tecnología de montaje superficial (SMD); asimismo, se añadieron: 2 salidas por PIN del PIC18F45K50, salidas de 3.3V y 5V, 7leds que cubren el PORTA, un control de leds, un control buzzer, led indicador de activación del buzzer, potenciómetro para ADC, control de ADC y brillo automático en la pantalla LCD. Esta serie de cambios permitieron la Versión 2.0 representada inicialmente en el diagrama de la Fig.~\ref{fig:5}
-\Img{8.0cm}{5.5cm}{Segunda_Version}{Diagrama de circuito Versión 2.0}{fig:5}
+Esta nueva versión parte del diseño descrito anteriormente, removiéndose los elementos THT para sustituirlos por tecnología de montaje superficial (SMD); asimismo, se añadieron: 2 salidas por PIN del PIC18F45K50, salidas de 3.3V y 5V, 7leds que cubren el PORTA, un control de leds, un control buzzer, led indicador de activación del buzzer, potenciómetro para ADC, control de ADC y brillo automático en la pantalla LCD. Esta serie de cambios permitieron la Versión 2.0 representada inicialmente en el diagrama de la Fig.~\ref{fig:5}\\
 
 Por consecuencia se ajustó el dibujo del circuito impreso para agregar los nuevos elementos, sin embargo, cabe destacar que las medidas de diseño se redujeron a 9.017cm x 9.906cm como se muestra en la Fig.~\ref{fig:6}. 
+\Img{8.0cm}{5.5cm}{Segunda_Version}{Diagrama de circuito Versión 2.0}{fig:5}
+
 \Img{6.5cm}{6.0cm}{segunda_version_pcb}{Diagrama de circuito impreso Versión 2.0}{fig:6}
 
 
 Nuevamente recurrimos al análisis a partir de un modelo 3D para evitar posibles fallas en el dibujo del circuito impreso, como se puede apreciar en la Fig.\ref{fig:7}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \begin{subfigure}[b]{0.4\columnwidth}
     \includegraphics[width=4.3cm, height=4.3cm]{Img/segunda_version_3d.png}
     % \caption{Primera imagen.}
@@ -169,12 +182,10 @@ Una vez obtenida la alineación de todos los componentes, se imprimió el diseñ
 %------------------------------------------------------------------------- 
 %Tercera versión
 \SubSection{Placa entranadora Versión 3.0}
-En la tercera y más reciente versión se agregó un puerto USB tipo C, nuevo sistema de alimentación, pantalla OLED, 3 push button para interrupciones, modo de programación con bootloader y 3 display de 7 segmentos unificados; todo esto se dispone en el diagrama de la Fig.~\ref{fig:9}.
+En la tercera y más reciente versión se agregó un puerto USB tipo C, nuevo sistema de alimentación, pantalla OLED, 3 push button para interrupciones, modo de programación con bootloader y 3 display de 7 segmentos unificados; todo esto se dispone en el diagrama de la Fig.~\ref{fig:9}.\\
+
+Continuando con el diseño del circuito impreso, una vez más se consiguió reducir las medidas de construcción de la placa en un 37\% aproximado respecto a la versión anterior, quedando de 7.080 x 8.050 cm. Los componentes de la placa de entrenamiento propuesta en este estudio se describen a continuación en la Fig.~\ref{fig:10}
 \Img{8.5cm}{7.0cm}{Tercera_Version}{Diagrama de circuito Versión 3.0}{fig:9}
-
-Continuando con el diseño del circuito impreso, una vez más se consiguió reducir las medidas de construcción de la placa en un 37\% aproximado respecto a la versión anterior, quedando de 7.080 x 8.050 cm. \\ 
-Los componentes de la placa de entrenamiento propuesta en este estudio se describen a continuación en la Fig.~\ref{fig:10}
-
 \Img{7.5cm}{7.0cm}{tercera_version_pcb}{Diagrama de circuito impreso Versión 3.0}{fig:10}
 \begin{enumerate}[label=\emph{\Alph*.}] 
   \item \textbf{Modulo de Programación}\\ Se agregó una entrada para el PIKIT4, que es el programador oficial que nos proporciona la empresa Microchip. para la familia PIC18; este permite grabar un programa hexadecimal dentro del software del PIKIT3 o en el IDE MPLAB. También se realizaron las conexiones pertinentes para habilitar la  programación vía USB.
@@ -194,7 +205,7 @@ que es capaz de consumir menos recursos, brindar una imagen más brillante y ní
 
 Luego de tener cada uno de los elementos alineados, se procedió a imprimir el diseño del circuito en la placa y se obtuvo la forma final como se muestra en la figura~\ref{fig:11}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \begin{subfigure}[b]{0.4\columnwidth}
      \includegraphics[width=4.3cm, height=4.3cm]{Img/tercera_version_3d.png}
     % \caption{Primera imagen.}
@@ -218,13 +229,18 @@ Luego de tener cada uno de los elementos alineados, se procedió a imprimir el d
 %Resultados y discusión
 \Section{Resultados y discusión}
 La Versión 1.0 fue pensada para cumplir una única función adaptada a un sistema de alarma, la cual cumple satisfactoriamente. En cuanto a posibles fallas se encontró un sobrecalentamiento en un elemento del módulo de alimentación; se solucionó realizando una prueba de corto circuito para encontrar el origen de la falla en el elemento regulador LM7805. Es posible que esta pieza presentara un defecto de fabricación, por lo que se retiró dicho componente y se sustituyó por uno nuevo. En la Fig.12 se presenta un DEMO.\\
+
 En la Versión 2.0 es importante resaltar que se consiguió agregar más elementos a la vez que se redujo el tamaño de la placa, resultado de utilizar SMD, es decir, incorporar elementos más pequeños nos permitió optimizar mejor el espacio de trabajo. El tamaño de los encapsulados rectangulares SMD que se utilizó en esta versión fue de 1206 (3.2 x 1.6
 mm); se optó por estos por su fácil manipulación en el momento de ensamblaje. En la Fig.13 se presenta un DEMO.\\
-En la Versión 3.0, y más reciente, se logró reducir el tamaño de los encapsulados rectangulares SMD a 0805 (2.0 x 1.25 mm); en consecuencia, la proporción del tamaño de la placa también se redujo. También se implementó un nuevo sistema de alimentación donde los elementos through hole(THT) que lo conformaban fueron sustituidos por componentes SMD y se cambió el grosor de las pistas en esta sección de la placa para aumentar su vida útil. A partir de la Versión 1.0 se ha conseguido reducir el tamaño del circuito impreso gracias a la tecnología de fabricación de circuitos de doble cara, permitiendo optimizar el recurso; de la Versión 1.0 a 2.0 se redujo un 10.68\%, de la Versión 2.0 a 3.0 hasta un 37\%, y de la primera respecto a la última el resultado fue de 49.5\%. En otras palabras, esta placa consigue ser atractiva por su multifuncionalidad en diferentes campos de trabajo debido a que su tamaño le permite ser accesible y flexible.
+
+En la Versión 3.0, y más reciente, se logró reducir el tamaño de los encapsulados rectangulares SMD a 0805 (2.0 x 1.25 mm); en consecuencia, la proporción del tamaño de la placa también se redujo. También se implementó un nuevo sistema de alimentación donde los elementos through hole(THT) que lo conformaban fueron sustituidos por componentes SMD y se cambió el grosor de las pistas en esta sección de la placa para aumentar su vida útil.\\
+
+A partir de la Versión 1.0 se ha conseguido reducir el tamaño del circuito impreso gracias a la tecnología de fabricación de circuitos de doble cara, permitiendo optimizar el recurso; de la Versión 1.0 a 2.0 se redujo un 10.68\%, de la Versión 2.0 a 3.0 hasta un 37\%, y de la primera respecto a la última el resultado fue de 49.5\%. En otras palabras, esta placa consigue ser atractiva por su multifuncionalidad en diferentes campos de trabajo debido a que su tamaño le permite ser accesible y flexible.
 %-------------------------------------------------------------------------
 %Conclusiones
 \Section{Conclusiones}
-En definitiva, consideramos que se debe motivar a las nuevas generaciones de estudiantes de Ingeniería Electrónica a profundizar en el diseño de circuitos electrónicos y brindarles las herramientas necesarias para que sean capaces de realizar prácticas a nivel del ejercicio profesional y así generar un incremento en la producción de la zona y el país e ir al corriente con las tecnologías globales.
+En definitiva, consideramos que se debe motivar a las nuevas generaciones de estudiantes de Ingeniería Electrónica a profundizar en el diseño de circuitos
+electrónicos y brindarles las herramientas necesarias para que sean capaces de realizar prácticas a nivel del ejercicio profesional y así generar un incremento en la producción de la zona y el país e ir al corriente con las tecnologías globales.
 %-------------------------------------------------------------------------
 \begin{comment}
 \Section{Instructions}

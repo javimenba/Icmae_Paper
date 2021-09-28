@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.27)  28 SEP 2021 01:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.27)  28 SEP 2021 12:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -207,147 +207,237 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 73.
 
-Underfull \hbox (badness 3029) in paragraph at lines 77--81
+Underfull \hbox (badness 3029) in paragraph at lines 77--79
 []\OT1/ptm/m/it/10 El campo de la In-ge-nier[]^^Pa en Co-mu-ni-ca-ciones y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 95--96
+\OT1/ptm/m/n/10 para re-alizar nu-merosas apli-ca-ciones, per-mi-tiendo el
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 2591) in paragraph at lines 106--107
+\OT1/ptm/m/n/10 di-men-siones grandes que re-sulta poco ac-ce-si-ble para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
+
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
+Underfull \hbox (badness 2012) in paragraph at lines 112--113
+\OT1/ptm/m/n/10 como son la electr[]onica, []optica in-teligen-cia ar-ti-fi-cial,
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 122.
+(Font)              <7> on input line 121.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 122.
-<Img/Primera_Version.pdf, id=9, 1200.485pt x 684.5575pt>
+(Font)              <5> on input line 121.
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 131--133
+[]\OT1/ptm/m/n/10 La primera versi[]on cont[]o con tec-nolog[]^^Pa through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+<Img/Primera_Version.pdf, id=10, 1200.485pt x 684.5575pt>
 File: Img/Primera_Version.pdf Graphic file (type pdf)
 <use Img/Primera_Version.pdf>
-Package pdftex.def Info: Img/Primera_Version.pdf  used on input line 124.
+Package pdftex.def Info: Img/Primera_Version.pdf  used on input line 136.
 (pdftex.def)             Requested size: 241.83295pt x 179.24464pt.
 
-Overfull \hbox (4.697pt too wide) in paragraph at lines 124--124
+Overfull \hbox (4.697pt too wide) in paragraph at lines 136--136
  [][] 
  []
 
-<Img/primera_version_pcb.png, id=10, 616.55344pt x 609.77812pt>
+<Img/primera_version_pcb.png, id=11, 616.55344pt x 609.77812pt>
 File: Img/primera_version_pcb.png Graphic file (type png)
 <use Img/primera_version_pcb.png>
-Package pdftex.def Info: Img/primera_version_pcb.png  used on input line 126.
+Package pdftex.def Info: Img/primera_version_pcb.png  used on input line 138.
 (pdftex.def)             Requested size: 184.93922pt x 170.7181pt.
-<Img/primera_version_3d.png, id=11, 640.64343pt x 488.57532pt>
+<Img/primera_version_3d.png, id=12, 640.64343pt x 488.57532pt>
 File: Img/primera_version_3d.png Graphic file (type png)
 <use Img/primera_version_3d.png>
-Package pdftex.def Info: Img/primera_version_3d.png  used on input line 128.
+Package pdftex.def Info: Img/primera_version_3d.png  used on input line 140.
 (pdftex.def)             Requested size: 241.84386pt x 199.1691pt.
 
-Overfull \hbox (4.70792pt too wide) in paragraph at lines 128--128
+Overfull \hbox (4.70792pt too wide) in paragraph at lines 140--140
  [][] 
  []
 
 [2 <./Img/Primera_Version.pdf> <./Img/primera_version_pcb.png (PNG copy)>]
-<Img/primera_version_final.png, id=22, 1160.335pt x 870.25125pt>
+<Img/primera_version_final.png, id=23, 1160.335pt x 870.25125pt>
 File: Img/primera_version_final.png Graphic file (type png)
 <use Img/primera_version_final.png>
-Package pdftex.def Info: Img/primera_version_final.png  used on input line 130.
+Package pdftex.def Info: Img/primera_version_final.png  used on input line 142.
 (pdftex.def)             Requested size: 241.8362pt x 199.17093pt.
 
-Overfull \hbox (4.70026pt too wide) in paragraph at lines 130--130
+Overfull \hbox (4.70026pt too wide) in paragraph at lines 142--142
  [][] 
  []
 
-<Img/Segunda_Version.pdf, id=23, 1459.4525pt x 963.6pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+<Img/Segunda_Version.pdf, id=24, 1459.4525pt x 963.6pt>
 File: Img/Segunda_Version.pdf Graphic file (type pdf)
 <use Img/Segunda_Version.pdf>
-Package pdftex.def Info: Img/Segunda_Version.pdf  used on input line 138.
+Package pdftex.def Info: Img/Segunda_Version.pdf  used on input line 152.
 (pdftex.def)             Requested size: 227.61577pt x 156.48756pt.
-<Img/segunda_version_pcb.png, id=24, 442.65375pt x 491.58656pt>
+<Img/segunda_version_pcb.png, id=25, 442.65375pt x 491.58656pt>
 File: Img/segunda_version_pcb.png Graphic file (type png)
 <use Img/segunda_version_pcb.png>
-Package pdftex.def Info: Img/segunda_version_pcb.png  used on input line 141.
+Package pdftex.def Info: Img/segunda_version_pcb.png  used on input line 154.
 (pdftex.def)             Requested size: 184.94742pt x 170.7152pt.
-<Img/segunda_version_3d.png, id=25, 456.20438pt x 505.13719pt>
+<Img/segunda_version_3d.png, id=26, 456.20438pt x 505.13719pt>
 File: Img/segunda_version_3d.png Graphic file (type png)
 <use Img/segunda_version_3d.png>
-Package pdftex.def Info: Img/segunda_version_3d.png  used on input line 148.
+Package pdftex.def Info: Img/segunda_version_3d.png  used on input line 161.
 (pdftex.def)             Requested size: 122.34149pt x 122.34532pt.
 
-Overfull \hbox (27.48857pt too wide) in paragraph at lines 148--151
+Overfull \hbox (27.48857pt too wide) in paragraph at lines 161--164
 [][] 
  []
 
-<Img/segunda_version_pcb_b.png, id=26, 551.05875pt x 596.2275pt>
+<Img/segunda_version_pcb_b.png, id=27, 551.05875pt x 596.2275pt>
 File: Img/segunda_version_pcb_b.png Graphic file (type png)
 <use Img/segunda_version_pcb_b.png>
-Package pdftex.def Info: Img/segunda_version_pcb_b.png  used on input line 154.
+Package pdftex.def Info: Img/segunda_version_pcb_b.png  used on input line 167.
 (pdftex.def)             Requested size: 122.3432pt x 122.34569pt.
 
-Overfull \hbox (27.49028pt too wide) in paragraph at lines 154--157
+Overfull \hbox (27.49028pt too wide) in paragraph at lines 167--170
 [][] 
  []
 
-<Img/segunda_version_final.jpg, id=27, 870.25125pt x 1160.335pt>
+[3 <./Img/primera_version_3d.png (PNG copy)> <./Img/primera_version_final.png> <./Img/Segunda_Version.pdf> <./Img/segunda_version_pcb.png (PNG copy)>]
+<Img/segunda_version_final.jpg, id=36, 870.25125pt x 1160.335pt>
 File: Img/segunda_version_final.jpg Graphic file (type jpg)
 <use Img/segunda_version_final.jpg>
-Package pdftex.def Info: Img/segunda_version_final.jpg  used on input line 166.
+Package pdftex.def Info: Img/segunda_version_final.jpg  used on input line 179.
 (pdftex.def)             Requested size: 213.39268pt x 199.1665pt.
-[3 <./Img/primera_version_3d.png (PNG copy)> <./Img/primera_version_final.png> <./Img/Segunda_Version.pdf> <./Img/segunda_version_pcb.png (PNG copy)>]
-<Img/Tercera_Version.pdf, id=36, 1333.98375pt x 917.4275pt>
-File: Img/Tercera_Version.pdf Graphic file (type pdf)
-<use Img/Tercera_Version.pdf>
-Package pdftex.def Info: Img/Tercera_Version.pdf  used on input line 173.
-(pdftex.def)             Requested size: 241.83688pt x 199.1609pt.
 
-Overfull \hbox (4.70094pt too wide) in paragraph at lines 173--173
- [][] 
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 172--173
+Underfull \hbox (badness 1057) in paragraph at lines 185--186
 []\OT1/ptm/m/n/10 En la ter-cera y m[]as re-ciente versi[]on se agreg[]o un
  []
 
-<Img/tercera_version_pcb.png, id=37, 460.72125pt x 517.935pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+<Img/Tercera_Version.pdf, id=37, 1333.98375pt x 917.4275pt>
+File: Img/Tercera_Version.pdf Graphic file (type pdf)
+<use Img/Tercera_Version.pdf>
+Package pdftex.def Info: Img/Tercera_Version.pdf  used on input line 188.
+(pdftex.def)             Requested size: 241.83688pt x 199.1609pt.
+
+Overfull \hbox (4.70094pt too wide) in paragraph at lines 188--188
+ [][] 
+ []
+
+<Img/tercera_version_pcb.png, id=38, 460.72125pt x 517.935pt>
 File: Img/tercera_version_pcb.png Graphic file (type png)
 <use Img/tercera_version_pcb.png>
-Package pdftex.def Info: Img/tercera_version_pcb.png  used on input line 178.
+Package pdftex.def Info: Img/tercera_version_pcb.png  used on input line 189.
 (pdftex.def)             Requested size: 213.38956pt x 199.17244pt.
 [4 <./Img/segunda_version_3d.png (PNG copy)> <./Img/segunda_version_pcb_b.png (PNG copy)> <./Img/segunda_version_final.jpg> <./Img/Tercera_Version.pdf> <./Img/tercera_version_pcb.png (PNG copy)>]
-<Img/tercera_version_3d.png, id=46, 628.59843pt x 493.0922pt>
+<Img/tercera_version_3d.png, id=47, 628.59843pt x 493.0922pt>
 File: Img/tercera_version_3d.png Graphic file (type png)
 <use Img/tercera_version_3d.png>
-Package pdftex.def Info: Img/tercera_version_3d.png  used on input line 199.
+Package pdftex.def Info: Img/tercera_version_3d.png  used on input line 210.
 (pdftex.def)             Requested size: 122.3412pt x 122.34729pt.
 
-Overfull \hbox (27.48828pt too wide) in paragraph at lines 199--202
+Overfull \hbox (27.48828pt too wide) in paragraph at lines 210--213
 [][] 
  []
 
-<Img/tercera_version_pcb_b.png, id=47, 596.98032pt x 686.565pt>
+<Img/tercera_version_pcb_b.png, id=48, 596.98032pt x 686.565pt>
 File: Img/tercera_version_pcb_b.png Graphic file (type png)
 <use Img/tercera_version_pcb_b.png>
-Package pdftex.def Info: Img/tercera_version_pcb_b.png  used on input line 205.
+Package pdftex.def Info: Img/tercera_version_pcb_b.png  used on input line 216.
 (pdftex.def)             Requested size: 122.3453pt x 122.34018pt.
 
-Overfull \hbox (27.49239pt too wide) in paragraph at lines 205--208
+Overfull \hbox (27.49239pt too wide) in paragraph at lines 216--219
 [][] 
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 231--232
+\OT1/ptm/m/n/10 un so-bre-ca-len-tamiento en un el-e-mento del m[]odulo de
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 231--232
+\OT1/ptm/m/n/10 un de-fecto de fab-ri-caci[]on, por lo que se re-tir[]o di-cho
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
  []
 
 [5 <./Img/tercera_version_3d.png (PNG copy)> <./Img/tercera_version_pcb_b.png (PNG copy)>] Excluding 'comment' comment. (./latex8.bbl
-Underfull \hbox (badness 1221) in paragraph at lines 227--1
+Underfull \hbox (badness 1221) in paragraph at lines 242--1
 []\OT1/ptm/m/n/10 En defini-tiva, con-sid-er-amos que se debe mo-ti-var a
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 227--1
+Underfull \hbox (badness 2913) in paragraph at lines 242--1
 \OT1/ptm/m/n/10 las nuevas gen-era-ciones de es-tu-di-antes de In-ge-nier[]^^Pa
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 227--1
+Underfull \hbox (badness 4144) in paragraph at lines 242--1
 \OT1/ptm/m/n/10 Electr[]onica a pro-fun-dizar en el dise[]no de cir-cuitos
  []
 
@@ -355,18 +445,18 @@ Underfull \hbox (badness 4144) in paragraph at lines 227--1
 
 ] (./latex8.aux) ) 
 Here is how much of TeX's memory you used:
- 4433 strings out of 478994
- 71736 string characters out of 5864751
- 380061 words of memory out of 5000000
- 21860 multiletter control sequences out of 15000+600000
- 423605 words of font info for 58 fonts, out of 8000000 for 9000
+ 4436 strings out of 478994
+ 71765 string characters out of 5864751
+ 379061 words of memory out of 5000000
+ 21861 multiletter control sequences out of 15000+600000
+ 425234 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,9n,88p,988b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on latex8.pdf (6 pages, 1601614 bytes).
+ 83i,9n,88p,658b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on latex8.pdf (6 pages, 1609754 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
