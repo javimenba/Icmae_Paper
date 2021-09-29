@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex latex8"] 1632895526 "latex8.aux" "latex8.bbl" "latex8" 1632895682
+["bibtex latex8"] 1632895526 "latex8.aux" "latex8.bbl" "latex8" 1632896429
   "./latex8.bst" 1632855180 19535 0f8b4bbb95961e52095b222ab55a4fac ""
-  "latex8.aux" 1632895682 4294 f37868cb261045d4a7448ea5e22abe28 "pdflatex"
+  "latex8.aux" 1632896429 4294 f37868cb261045d4a7448ea5e22abe28 "pdflatex"
   "latex8.bib" 1632862162 782 6e00fc4c21c6b18ca80dc3372be08df4 ""
   (generated)
   "latex8.bbl"
   "latex8.blg"
-["pdflatex"] 1632895680 "latex8.tex" "latex8.pdf" "latex8" 1632895682
+["pdflatex"] 1632896428 "latex8.tex" "latex8.pdf" "latex8" 1632896429
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1617738065 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb.tfm" 1617738065 2300 14616918391efa49ac8b481a75fbdc1a ""
@@ -83,23 +83,23 @@
   "Img/Segunda_Version.pdf" 1632687982 104524 ae0229abbeb0798e6fcd33581941eaf3 ""
   "Img/Tercera_Version.pdf" 1632688105 116026 e2dffeda551f59ba12af9129010686c1 ""
   "Img/primera_version_3d.png" 1632590311 139547 44c324759a8c4e91131e48246e4f7476 ""
-  "Img/primera_version_demo.jpg" 1632894790 10400886 07d3122262a003654832a49daf489ff0 ""
-  "Img/primera_version_final.jpg" 1632894913 11481577 ebea4223df9643730e2ccb4029bc90e6 ""
+  "Img/primera_version_demo.jpg" 1632896357 74199 f93d05442e15eeec41ad5c47f1f5522c ""
+  "Img/primera_version_final.jpg" 1632896373 69436 769be862a942e316cdf5dd3133a0d325 ""
   "Img/primera_version_pcb.png" 1632589590 79116 10b9f70b1402d3eaba03f2142e33a25e ""
   "Img/segunda_version_3d.png" 1632599920 142479 027eaf8494a96bb15597a402845893f7 ""
-  "Img/segunda_version_demoa.jpg" 1632892696 12725924 df2bf28dd1fd5233154ddc5234c5d251 ""
-  "Img/segunda_version_demob.jpg" 1632892791 10998899 c161b1520766c0a00d458b580d5a9e0b ""
-  "Img/segunda_version_final.jpg" 1632892867 10856146 090c1dfd4912f88798948f02c28b4aa7 ""
+  "Img/segunda_version_demoa.jpg" 1632896385 60232 4e07ba8db646040cde7f4d3decfb86bb ""
+  "Img/segunda_version_demob.jpg" 1632896398 63772 8f317252c927fdba42873a4b314a0d5c ""
+  "Img/segunda_version_final.jpg" 1632896407 62065 02d12f4e6830558952f3cc5e6880d02d ""
   "Img/segunda_version_pcb.png" 1632599874 67192 a288eb9591688cc93fb401b1d80ffa1f ""
   "Img/segunda_version_pcb_b.png" 1632776398 165394 8a8adede654f69d07514f38a7afc8e57 ""
   "Img/tercera_version_3d.png" 1632615970 113892 fc380297426ac59aa6bcd2e61afe0ee6 ""
   "Img/tercera_version_pcb.png" 1632615884 106129 d676a28b34fd47c45abcdd660699a959 ""
   "Img/tercera_version_pcb_b.png" 1632776469 225444 c0f07c68bf280b3110a10db7367b336b ""
-  "latex8.aux" 1632895682 4294 f37868cb261045d4a7448ea5e22abe28 "pdflatex"
+  "latex8.aux" 1632896429 4294 f37868cb261045d4a7448ea5e22abe28 "pdflatex"
   "latex8.bbl" 1632895526 503 17acfdd54ce8e77b864b3d425b886269 "bibtex latex8"
   "latex8.sty" 1632372809 4653 348b16eb06088469fdb326a3255e9315 ""
   "latex8.tex" 1632895679 28271 6c66a18d39e2cd17ce3257c4e8f5d667 ""
   (generated)
-  "latex8.log"
   "latex8.pdf"
+  "latex8.log"
   "latex8.aux"
