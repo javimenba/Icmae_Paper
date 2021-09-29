@@ -1,13 +1,22 @@
 \begin{thebibliography}{1}\setlength{\itemsep}{-1ex}\small
 
-\bibitem{ex1}
-Microchip.
-\newblock Pic18(l)f2x/45k50 data sheet.
-\newblock {\em Microchip Technology Inc}, 2012.
-
 \bibitem{ex2}
-N.~F. OPTO.
-\newblock Led digit display.
-\newblock {\em ELECTRONICS CO, LTD}, 2012.
+G.~R. Kanagachidambaresan.
+\newblock {\em Introduction to KiCad Design for Breakout and Circuit Designs}.
+\newblock Primera edition, 2021.
+
+\bibitem{ex3}
+Microchip.
+\newblock {\em PIC18(L)F2X/45K50 DATA SHEET}.
+\newblock USA, 2012.
+
+\bibitem{ex4}
+N.~F. Optp.
+\newblock {\em Led digit display}.
+\newblock RUS, 2012.
+
+\bibitem{ex1}
+C.~A. Reyes.
+\newblock Microcontroladores pic programación en basic, 2006.
 
 \end{thebibliography}
