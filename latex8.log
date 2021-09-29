@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.27)  29 SEP 2021 01:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.27)  29 SEP 2021 01:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -385,19 +385,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Img/primera_version_demo.jpg Graphic file (type jpg)
 <use Img/primera_version_demo.jpg>
 Package pdftex.def Info: Img/primera_version_demo.jpg  used on input line 259.
-(pdftex.def)             Requested size: 213.31302pt x 199.07799pt.
+(pdftex.def)             Requested size: 241.78308pt x 199.07799pt.
+
+Overfull \hbox (4.64714pt too wide) in paragraph at lines 259--259
+ [][] 
+ []
+
 <Img/segunda_version_demoa.jpg, id=51, 9282.68pt x 6962.01pt>
 File: Img/segunda_version_demoa.jpg Graphic file (type jpg)
 <use Img/segunda_version_demoa.jpg>
 Package pdftex.def Info: Img/segunda_version_demoa.jpg  used on input line 262.
-(pdftex.def)             Requested size: 213.31302pt x 199.07799pt.
- [5 <./Img/tercera_version_pcb_b.png (PNG copy)> <./Img/tercera_version_3d.png (PNG copy)> <./Img/primera_version_demo.jpg>]
+(pdftex.def)             Requested size: 241.78308pt x 199.07799pt.
+
+Overfull \hbox (4.64714pt too wide) in paragraph at lines 262--262
+ [][] 
+ []
+
+[5 <./Img/tercera_version_pcb_b.png (PNG copy)> <./Img/tercera_version_3d.png (PNG copy)> <./Img/primera_version_demo.jpg>]
 <Img/segunda_version_demob.jpg, id=55, 9282.68pt x 6962.01pt>
 File: Img/segunda_version_demob.jpg Graphic file (type jpg)
 <use Img/segunda_version_demob.jpg>
 Package pdftex.def Info: Img/segunda_version_demob.jpg  used on input line 263.
-(pdftex.def)             Requested size: 213.31302pt x 199.07799pt.
- Excluding 'comment' comment. (./latex8.bbl
+(pdftex.def)             Requested size: 241.78308pt x 199.07799pt.
+
+Overfull \hbox (4.64714pt too wide) in paragraph at lines 263--263
+ [][] 
+ []
+
+Excluding 'comment' comment. (./latex8.bbl
 Underfull \hbox (badness 1221) in paragraph at lines 272--1
 []\OT1/ptm/m/n/10 En defini-tiva, con-sid-er-amos que se debe mo-ti-var a
  []
@@ -422,7 +437,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  83i,9n,88p,1075b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on latex8.pdf (6 pages, 57909287 bytes).
+Output written on latex8.pdf (6 pages, 57909279 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
